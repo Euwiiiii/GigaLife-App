@@ -8,36 +8,36 @@ namespace GigaLife
         {
             // Inside Giga Points 
             int points = 1000;
-            string userChoice, rewards, rewards2;
+            string? userChoice, rewards, rewards2;
             int video99 = 99, stories99 = 99, power149 = 149, allNet99 = 99, magicData99 = 99, allData99 = 99;
 
             // inside HOME
             int load = 5000, sharable = 6000, everDay = 2;
-            string subscription = "GIGA POWER 149";
+            string? subscription = "GIGA POWER 149";
 
             // inside PASA
-            string pasaNo = "09476749101";
-            string pasaNoInput;
-            string con, pasa;
+            string? pasaNo = "09476749101";
+            string? pasaNoInput;
+            string? con, pasa;
 
 
             // intro
-            string mobileNumber = "09205629648";
-            string pinCode = "BSCpE2023";
+            string? mobileNumber = "09205629648";
+            string? pinCode = "BSCpE2023";
 
             // intro + Asking for Mobile number
             Console.WriteLine("GigaLife App");
             Console.WriteLine("Enter your Mobile Number");
-            string userNumber = Console.ReadLine();
+            string? userNumber = Console.ReadLine();
 
             // Asking for Password
             Console.WriteLine("Enter your Password");
-            string userPin = Console.ReadLine();
+            string? userPin = Console.ReadLine();
 
             //conditions
             while (userNumber != "0" & userPin != "0")
             {
-                string result = userNumber == mobileNumber && userPin == pinCode ? "correct" : "error";
+                string? result = userNumber == mobileNumber && userPin == pinCode ? "correct" : "error";
 
                 if (result == "correct") // tama sa number mali sa pin 
                 {
@@ -231,7 +231,8 @@ namespace GigaLife
                                     Console.WriteLine("5. POWER ALL ");
                                     Console.WriteLine();
 
-                                    string homePromo = Console.ReadLine();
+                                    string?
+                     homePromo = Console.ReadLine();
                                     while (homePromo != "0")
                                     {
                                         switch (homePromo)
@@ -240,7 +241,8 @@ namespace GigaLife
                                                 Console.WriteLine("DON'T MISS OUT!");
                                                 Console.WriteLine("1. DOUBLE GIGA+");
 
-                                                string missOutChoice = Console.ReadLine();
+                                                string?
+                                 missOutChoice = Console.ReadLine();
                                                 switch (missOutChoice)
                                                 {
                                                     case "1": // Double Giga+
@@ -250,7 +252,8 @@ namespace GigaLife
                                                         Console.WriteLine("3. DOUBLE GIGA STORIES+ 130");
                                                         Console.WriteLine("4. DOUBLE GIGA STORIES+ 399");
 
-                                                        string gigaChoice = Console.ReadLine();
+                                                        string?
+                                         gigaChoice = Console.ReadLine();
                                                         switch (gigaChoice)
                                                         {
                                                             case "1": // Double Giga Video+ 130
@@ -262,7 +265,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P130");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string video130 = Console.ReadLine();
+                                                                string?
+                                                 video130 = Console.ReadLine();
                                                                 switch (video130)
                                                                 {
                                                                     case "1":
@@ -290,7 +294,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P399");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string video399 = Console.ReadLine();
+                                                                string?
+                                                 video399 = Console.ReadLine();
                                                                 switch (video399)
                                                                 {
                                                                     case "1":
@@ -317,7 +322,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P130");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string stories130 = Console.ReadLine();
+                                                                string?
+                                                 stories130 = Console.ReadLine();
                                                                 switch (stories130)
                                                                 {
                                                                     case "1":
@@ -345,7 +351,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P399");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string stories399 = Console.ReadLine();
+                                                                string?
+                                                 stories399 = Console.ReadLine();
                                                                 switch (stories399)
                                                                 {
                                                                     case "1":
@@ -373,7 +380,8 @@ namespace GigaLife
                                                 Console.WriteLine("     Looking for the best deals? We got you!");
                                                 Console.WriteLine("1. POWER ALL 149 with FREEBIE!");
 
-                                                string hotDealsChoice = Console.ReadLine();
+                                                string?
+                                 hotDealsChoice = Console.ReadLine();
                                                 switch (hotDealsChoice)
                                                 {
                                                     case "1":
@@ -385,7 +393,8 @@ namespace GigaLife
                                                         Console.WriteLine("Amount           P149");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                        string subChoice = Console.ReadLine();
+                                                        string?
+                                         subChoice = Console.ReadLine();
                                                         switch (subChoice)
                                                         {
                                                             case "1":
@@ -412,7 +421,8 @@ namespace GigaLife
                                                 Console.WriteLine("2 GB GIGA EVERY DAY");
                                                 Console.WriteLine("1. VIDEO");
                                                 Console.WriteLine("2. STORIES");
-                                                string doubleGigaChoice = Console.ReadLine();
+                                                string?
+                                 doubleGigaChoice = Console.ReadLine();
 
                                                 switch (doubleGigaChoice) // case 3 for Double Giga+
                                                 {
@@ -420,7 +430,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. DOUBLE GIGA VIDEO+ 65");
                                                         Console.WriteLine("2. DOUBLE GIGA VIDEO+ 130");
                                                         Console.WriteLine("3. DOUBLE GIGA VIDEO+ 399");
-                                                        string doubleGigaVideo = Console.ReadLine();
+                                                        string?
+                                         doubleGigaVideo = Console.ReadLine();
 
                                                         switch (doubleGigaVideo)
                                                         {
@@ -433,7 +444,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P65");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaVideo65 = Console.ReadLine();
+                                                                string?
+                                                 gigaVideo65 = Console.ReadLine();
                                                                 switch (gigaVideo65)
                                                                 {
                                                                     case "1":
@@ -460,7 +472,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P130");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaVideo130 = Console.ReadLine();
+                                                                string?
+                                                 gigaVideo130 = Console.ReadLine();
                                                                 switch (gigaVideo130)
                                                                 {
                                                                     case "1":
@@ -487,7 +500,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P399");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaVideo399 = Console.ReadLine();
+                                                                string?
+                                                 gigaVideo399 = Console.ReadLine();
                                                                 switch (gigaVideo399)
                                                                 {
                                                                     case "1":
@@ -511,7 +525,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. DOUBLE GIGA STORIES+ 65");
                                                         Console.WriteLine("2. DOUBLE GIGA STORIES+ 130");
                                                         Console.WriteLine("3. DOUBLE GIGA STORIES+ 399");
-                                                        string doubleGigaStories = Console.ReadLine();
+                                                        string?
+                                         doubleGigaStories = Console.ReadLine();
 
                                                         switch (doubleGigaStories)
                                                         {
@@ -524,7 +539,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P65");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaStories65 = Console.ReadLine();
+                                                                string?
+                                                 gigaStories65 = Console.ReadLine();
                                                                 switch (gigaStories65)
                                                                 {
                                                                     case "1":
@@ -551,7 +567,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P130");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaStories130 = Console.ReadLine();
+                                                                string?
+                                                 gigaStories130 = Console.ReadLine();
                                                                 switch (gigaStories130)
                                                                 {
                                                                     case "1":
@@ -578,7 +595,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P399");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string gigaStories399 = Console.ReadLine();
+                                                                string?
+                                                 gigaStories399 = Console.ReadLine();
                                                                 switch (gigaStories399)
                                                                 {
                                                                     case "1":
@@ -626,7 +644,8 @@ namespace GigaLife
                                                         Console.WriteLine("3. 30 Days (24GB)\n     P499");
                                                         Console.WriteLine("4. 30 Days (36GB)\n     P599");
                                                         Console.WriteLine("5. 30 Days (48GB)\n     P699");
-                                                        string powerEveryDay = Console.ReadLine();
+                                                        string?
+                                         powerEveryDay = Console.ReadLine();
 
                                                         switch (powerEveryDay)
                                                         {
@@ -638,7 +657,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower3GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower3GB = Console.ReadLine();
                                                                 switch (choicePower3GB)
                                                                 {
                                                                     case "1":
@@ -664,7 +684,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower6GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower6GB = Console.ReadLine();
                                                                 switch (choicePower6GB)
                                                                 {
                                                                     case "1":
@@ -690,7 +711,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P499");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower24GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
                                                                     case "1":
@@ -716,7 +738,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P599");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower36GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower36GB = Console.ReadLine();
                                                                 switch (choicePower36GB)
                                                                 {
                                                                     case "1":
@@ -742,7 +765,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P699");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower48GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
                                                                     case "1":
@@ -772,7 +796,8 @@ namespace GigaLife
                                                         Console.WriteLine("3. 30 Days (24GB)\n     P699");
                                                         Console.WriteLine("4. 30 Days (36GB)\n     P799");
                                                         Console.WriteLine("5. 30 Days (48GB)\n     P899");
-                                                        string powerPlus = Console.ReadLine();
+                                                        string?
+                                         powerPlus = Console.ReadLine();
 
                                                         switch (powerPlus)
                                                         {
@@ -784,7 +809,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower3GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower3GB = Console.ReadLine();
                                                                 switch (choicePower3GB)
                                                                 {
                                                                     case "1":
@@ -810,7 +836,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P199");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower6GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower6GB = Console.ReadLine();
                                                                 switch (choicePower6GB)
                                                                 {
                                                                     case "1":
@@ -836,7 +863,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P699");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower24GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
                                                                     case "1":
@@ -862,7 +890,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P799");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower36GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower36GB = Console.ReadLine();
                                                                 switch (choicePower36GB)
                                                                 {
                                                                     case "1":
@@ -888,7 +917,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P899");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choicePower48GB = Console.ReadLine();
+                                                                string?
+                                                 choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
                                                                     case "1":
@@ -915,7 +945,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (2GB)\n        P50");
                                                         Console.WriteLine("2. 7 Days (6GB)\n        P99");
                                                         Console.WriteLine("3. 30 Days (24GB)\n     P299");
-                                                        string videoEveryDay = Console.ReadLine();
+                                                        string?
+                                         videoEveryDay = Console.ReadLine();
 
                                                         switch (videoEveryDay)
                                                         {
@@ -927,7 +958,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo2GB = Console.ReadLine();
                                                                 switch (choiceVideo2GB)
                                                                 {
                                                                     case "1":
@@ -953,7 +985,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo6GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo6GB = Console.ReadLine();
                                                                 switch (choiceVideo6GB)
                                                                 {
                                                                     case "1":
@@ -979,7 +1012,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo24GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo24GB = Console.ReadLine();
                                                                 switch (choiceVideo24GB)
                                                                 {
                                                                     case "1":
@@ -1007,7 +1041,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (1GB)\n         P75");
                                                         Console.WriteLine("2. 7 Days (2GB)\n        P149");
                                                         Console.WriteLine("3. 30 Days (4GB)\n       P449");
-                                                        string videoPLus = Console.ReadLine();
+                                                        string?
+                                         videoPLus = Console.ReadLine();
 
                                                         switch (videoPLus)
                                                         {
@@ -1019,7 +1054,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo1GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo1GB = Console.ReadLine();
                                                                 switch (choiceVideo1GB)
                                                                 {
                                                                     case "1":
@@ -1045,7 +1081,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo2GB = Console.ReadLine();
                                                                 switch (choiceVideo2GB)
                                                                 {
                                                                     case "1":
@@ -1071,7 +1108,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P449");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceVideo4GB = Console.ReadLine();
+                                                                string?
+                                                 choiceVideo4GB = Console.ReadLine();
                                                                 switch (choiceVideo4GB)
                                                                 {
                                                                     case "1":
@@ -1098,7 +1136,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (1GB)\n         P50");
                                                         Console.WriteLine("2. 7 Days (2GB)\n         P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n       P299");
-                                                        string storiesEveryDay = Console.ReadLine();
+                                                        string?
+                                         storiesEveryDay = Console.ReadLine();
 
                                                         switch (storiesEveryDay)
                                                         {
@@ -1110,7 +1149,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories1GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories1GB = Console.ReadLine();
 
                                                                 switch (choiceStories1GB)
                                                                 {
@@ -1137,7 +1177,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories2GB = Console.ReadLine();
 
                                                                 switch (choiceStories2GB)
                                                                 {
@@ -1164,7 +1205,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories4GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories4GB = Console.ReadLine();
 
                                                                 switch (choiceStories4GB)
                                                                 {
@@ -1193,7 +1235,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (1GB)\n          P75");
                                                         Console.WriteLine("2. 7 Days (2GB)\n         P149");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P499");
-                                                        string storiesPlus = Console.ReadLine();
+                                                        string?
+                                         storiesPlus = Console.ReadLine();
 
                                                         switch (storiesPlus)
                                                         {
@@ -1205,7 +1248,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories1GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories1GB = Console.ReadLine();
 
                                                                 switch (choiceStories1GB)
                                                                 {
@@ -1232,7 +1276,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories2GB = Console.ReadLine();
 
                                                                 switch (choiceStories2GB)
                                                                 {
@@ -1259,7 +1304,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P449");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceStories4GB = Console.ReadLine();
+                                                                string?
+                                                 choiceStories4GB = Console.ReadLine();
 
                                                                 switch (choiceStories4GB)
                                                                 {
@@ -1289,7 +1335,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (1GB)\n          P50");
                                                         Console.WriteLine("2. 7 Days (2GB)\n          P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P299");
-                                                        string games1EveryDay = Console.ReadLine();
+                                                        string?
+                                         games1EveryDay = Console.ReadLine();
 
                                                         switch (games1EveryDay)
                                                         {
@@ -1301,7 +1348,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames1GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames1GB = Console.ReadLine();
 
                                                                 switch (choiceGames1GB)
                                                                 {
@@ -1328,7 +1376,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames2GB = Console.ReadLine();
 
                                                                 switch (choiceGames2GB)
                                                                 {
@@ -1355,7 +1404,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames4GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames4GB = Console.ReadLine();
 
                                                                 switch (choiceGames4GB)
                                                                 {
@@ -1384,7 +1434,8 @@ namespace GigaLife
                                                         Console.WriteLine("1. 3 Days (1GB)\n          P50");
                                                         Console.WriteLine("2. 7 Days (2GB)\n          P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P299");
-                                                        string games2EveryDay = Console.ReadLine();
+                                                        string?
+                                         games2EveryDay = Console.ReadLine();
 
                                                         switch (games2EveryDay)
                                                         {
@@ -1396,7 +1447,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames1GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames1GB = Console.ReadLine();
 
                                                                 switch (choiceGames1GB)
                                                                 {
@@ -1423,7 +1475,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames2GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames2GB = Console.ReadLine();
 
                                                                 switch (choiceGames2GB)
                                                                 {
@@ -1450,7 +1503,8 @@ namespace GigaLife
                                                                 Console.WriteLine("       Load: P" + load);
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
-                                                                string choiceGames4GB = Console.ReadLine();
+                                                                string?
+                                                 choiceGames4GB = Console.ReadLine();
 
                                                                 switch (choiceGames4GB)
                                                                 {
@@ -1480,9 +1534,11 @@ namespace GigaLife
                                                         Console.WriteLine("4. 7 Days (4GB - GAMES-2\n             P99");
                                                         Console.WriteLine("5. 30 Days (8GB - VIDEO\n             P299");
                                                         Console.WriteLine("6. 30 Days (8GB - STORIES)\n          P299");
-                                                        string doubleDataEveryDay = Console.ReadLine();
+                                                        string?
+                                         doubleDataEveryDay = Console.ReadLine();
 
-                                                        string double99, double299;
+                                                        string?
+                                         double99, double299;
                                                         switch (doubleDataEveryDay)
                                                         {
                                                             case "1":// Video99
@@ -1670,7 +1726,8 @@ namespace GigaLife
                                                         Console.WriteLine("       Load: P" + load);
                                                         Console.WriteLine("Amount           P99");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
-                                                        string choicePower8GB = Console.ReadLine();
+                                                        string?
+                                         choicePower8GB = Console.ReadLine();
                                                         switch (choicePower8GB)
                                                         {
                                                             case "1":
@@ -1696,7 +1753,8 @@ namespace GigaLife
                                                         Console.WriteLine("       Load: P" + load);
                                                         Console.WriteLine("Amount           P149");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
-                                                        string choicePower12GB = Console.ReadLine();
+                                                        string?
+                                         choicePower12GB = Console.ReadLine();
                                                         switch (choicePower12GB)
                                                         {
                                                             case "1":
@@ -1730,7 +1788,8 @@ namespace GigaLife
 
                             while (pasaNoInput != "0")
                             {
-                                string result2 = pasaNoInput == pasaNo ? "correct" : "incorrect";
+                                string?
+                 result2 = pasaNoInput == pasaNo ? "correct" : "incorrect";
 
                                 if (result2 == "correct")
                                 {
@@ -1761,7 +1820,8 @@ namespace GigaLife
                                                         Console.WriteLine("6. P1,000.00");
                                                         Console.WriteLine("7. Exit");
 
-                                                        string amountLoad = Console.ReadLine();
+                                                        string?
+                                         amountLoad = Console.ReadLine();
                                                         switch (amountLoad)
                                                         {
                                                             case "1":
@@ -1779,7 +1839,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload50 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1805,7 +1866,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload100 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1832,7 +1894,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload200 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1859,7 +1922,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload300 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1886,7 +1950,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload500 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1913,7 +1978,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaload1000 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1939,7 +2005,8 @@ namespace GigaLife
                                                         Console.WriteLine("6. 100 points");
                                                         Console.WriteLine("7. Exit");
 
-                                                        string amountPoints = Console.ReadLine();
+                                                        string?
+                                         amountPoints = Console.ReadLine();
                                                         switch (amountPoints)
                                                         {
                                                             case "1":
@@ -1956,7 +2023,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P 1.00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1982,7 +2050,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaPoints10 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2008,7 +2077,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaPoints20 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2034,7 +2104,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaPoints30 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2060,7 +2131,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaPoints50 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2086,7 +2158,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaPoints100 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2111,7 +2184,8 @@ namespace GigaLife
                                                         Console.WriteLine("6. 4 GB");
                                                         Console.WriteLine("7. Exit");
 
-                                                        string dataAmount = Console.ReadLine();
+                                                        string?
+                                         dataAmount = Console.ReadLine();
                                                         switch (dataAmount)
                                                         {
                                                             case "1":
@@ -2129,7 +2203,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData100 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2155,7 +2230,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData300 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2181,7 +2257,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData500 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2207,7 +2284,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData1000 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2233,7 +2311,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData2000 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2259,7 +2338,8 @@ namespace GigaLife
                                                                     Console.WriteLine("Amount           P" + pasaData4000 + ".00");
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
-                                                                    string confirmation = Console.ReadLine();
+                                                                    string?
+                                                     confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
