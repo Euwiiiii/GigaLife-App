@@ -16,13 +16,13 @@ namespace GigaLife
             string? subscription = "GIGA POWER 149";
 
             // inside PASA
-            string? pasaNo = "09476749101";
+            string? pasaNo = "09496314907";
             string? pasaNoInput;
             string? con, pasa;
 
 
             // intro
-            string? mobileNumber = "09205629648";
+            string? mobileNumber = "09206420898";
             string? pinCode = "BSCpE2023";
 
             // intro + Asking for Mobile number
@@ -45,7 +45,8 @@ namespace GigaLife
                     Console.WriteLine("1. Giga Points");
                     Console.WriteLine("2. Home");
                     Console.WriteLine("3. Pasa");
-                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("4. Account");
+                    Console.WriteLine("5. Exit");
                     userChoice = Console.ReadLine();
 
                     if (userChoice == "5")
@@ -228,12 +229,14 @@ namespace GigaLife
                                     Console.WriteLine("2. HOT DEALS");
                                     Console.WriteLine("3. DOUBLE GIGA +");
                                     Console.WriteLine("4. GIGA EVERYDAY");
-                                    Console.WriteLine("5. POWER ALL ");
-                                    Console.WriteLine();
+                                    Console.WriteLine("5. POWER ALL");
+                                    Console.WriteLine("6. ALL DATA");
+                                    Console.WriteLine("7. ALLNET");
+                                    Console.WriteLine("8. Exit");
 
                                     string?
-                     homePromo = Console.ReadLine();
-                                    while (homePromo != "0")
+                                        homePromo = Console.ReadLine();
+                                    while (homePromo != "8")
                                     {
                                         switch (homePromo)
                                         {
@@ -242,7 +245,7 @@ namespace GigaLife
                                                 Console.WriteLine("1. DOUBLE GIGA+");
 
                                                 string?
-                                 missOutChoice = Console.ReadLine();
+                                                    missOutChoice = Console.ReadLine();
                                                 switch (missOutChoice)
                                                 {
                                                     case "1": // Double Giga+
@@ -253,7 +256,7 @@ namespace GigaLife
                                                         Console.WriteLine("4. DOUBLE GIGA STORIES+ 399");
 
                                                         string?
-                                         gigaChoice = Console.ReadLine();
+                                                            gigaChoice = Console.ReadLine();
                                                         switch (gigaChoice)
                                                         {
                                                             case "1": // Double Giga Video+ 130
@@ -266,7 +269,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 video130 = Console.ReadLine();
+                                                                    video130 = Console.ReadLine();
                                                                 switch (video130)
                                                                 {
                                                                     case "1":
@@ -295,7 +298,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 video399 = Console.ReadLine();
+                                                                    video399 = Console.ReadLine();
                                                                 switch (video399)
                                                                 {
                                                                     case "1":
@@ -323,7 +326,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 stories130 = Console.ReadLine();
+                                                                    stories130 = Console.ReadLine();
                                                                 switch (stories130)
                                                                 {
                                                                     case "1":
@@ -352,7 +355,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 stories399 = Console.ReadLine();
+                                                                    stories399 = Console.ReadLine();
                                                                 switch (stories399)
                                                                 {
                                                                     case "1":
@@ -381,7 +384,7 @@ namespace GigaLife
                                                 Console.WriteLine("1. POWER ALL 149 with FREEBIE!");
 
                                                 string?
-                                 hotDealsChoice = Console.ReadLine();
+                                                    hotDealsChoice = Console.ReadLine();
                                                 switch (hotDealsChoice)
                                                 {
                                                     case "1":
@@ -394,7 +397,7 @@ namespace GigaLife
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                         string?
-                                         subChoice = Console.ReadLine();
+                                                            subChoice = Console.ReadLine();
                                                         switch (subChoice)
                                                         {
                                                             case "1":
@@ -422,7 +425,7 @@ namespace GigaLife
                                                 Console.WriteLine("1. VIDEO");
                                                 Console.WriteLine("2. STORIES");
                                                 string?
-                                 doubleGigaChoice = Console.ReadLine();
+                                                    doubleGigaChoice = Console.ReadLine();
 
                                                 switch (doubleGigaChoice) // case 3 for Double Giga+
                                                 {
@@ -431,7 +434,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. DOUBLE GIGA VIDEO+ 130");
                                                         Console.WriteLine("3. DOUBLE GIGA VIDEO+ 399");
                                                         string?
-                                         doubleGigaVideo = Console.ReadLine();
+                                                            doubleGigaVideo = Console.ReadLine();
 
                                                         switch (doubleGigaVideo)
                                                         {
@@ -445,7 +448,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaVideo65 = Console.ReadLine();
+                                                                    gigaVideo65 = Console.ReadLine();
                                                                 switch (gigaVideo65)
                                                                 {
                                                                     case "1":
@@ -473,7 +476,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaVideo130 = Console.ReadLine();
+                                                                    gigaVideo130 = Console.ReadLine();
                                                                 switch (gigaVideo130)
                                                                 {
                                                                     case "1":
@@ -501,7 +504,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaVideo399 = Console.ReadLine();
+                                                                    gigaVideo399 = Console.ReadLine();
                                                                 switch (gigaVideo399)
                                                                 {
                                                                     case "1":
@@ -526,7 +529,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. DOUBLE GIGA STORIES+ 130");
                                                         Console.WriteLine("3. DOUBLE GIGA STORIES+ 399");
                                                         string?
-                                         doubleGigaStories = Console.ReadLine();
+                                                            doubleGigaStories = Console.ReadLine();
 
                                                         switch (doubleGigaStories)
                                                         {
@@ -540,7 +543,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaStories65 = Console.ReadLine();
+                                                                    gigaStories65 = Console.ReadLine();
                                                                 switch (gigaStories65)
                                                                 {
                                                                     case "1":
@@ -568,7 +571,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaStories130 = Console.ReadLine();
+                                                                    gigaStories130 = Console.ReadLine();
                                                                 switch (gigaStories130)
                                                                 {
                                                                     case "1":
@@ -596,7 +599,7 @@ namespace GigaLife
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
                                                                 string?
-                                                 gigaStories399 = Console.ReadLine();
+                                                                    gigaStories399 = Console.ReadLine();
                                                                 switch (gigaStories399)
                                                                 {
                                                                     case "1":
@@ -645,7 +648,7 @@ namespace GigaLife
                                                         Console.WriteLine("4. 30 Days (36GB)\n     P599");
                                                         Console.WriteLine("5. 30 Days (48GB)\n     P699");
                                                         string?
-                                         powerEveryDay = Console.ReadLine();
+                                                            powerEveryDay = Console.ReadLine();
 
                                                         switch (powerEveryDay)
                                                         {
@@ -658,7 +661,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower3GB = Console.ReadLine();
+                                                                    choicePower3GB = Console.ReadLine();
                                                                 switch (choicePower3GB)
                                                                 {
                                                                     case "1":
@@ -685,7 +688,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower6GB = Console.ReadLine();
+                                                                    choicePower6GB = Console.ReadLine();
                                                                 switch (choicePower6GB)
                                                                 {
                                                                     case "1":
@@ -712,7 +715,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P499");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower24GB = Console.ReadLine();
+                                                                    choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
                                                                     case "1":
@@ -739,7 +742,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P599");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower36GB = Console.ReadLine();
+                                                                    choicePower36GB = Console.ReadLine();
                                                                 switch (choicePower36GB)
                                                                 {
                                                                     case "1":
@@ -766,7 +769,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P699");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower48GB = Console.ReadLine();
+                                                                    choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
                                                                     case "1":
@@ -797,7 +800,7 @@ namespace GigaLife
                                                         Console.WriteLine("4. 30 Days (36GB)\n     P799");
                                                         Console.WriteLine("5. 30 Days (48GB)\n     P899");
                                                         string?
-                                         powerPlus = Console.ReadLine();
+                                                            powerPlus = Console.ReadLine();
 
                                                         switch (powerPlus)
                                                         {
@@ -810,7 +813,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower3GB = Console.ReadLine();
+                                                                    choicePower3GB = Console.ReadLine();
                                                                 switch (choicePower3GB)
                                                                 {
                                                                     case "1":
@@ -837,7 +840,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P199");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower6GB = Console.ReadLine();
+                                                                    choicePower6GB = Console.ReadLine();
                                                                 switch (choicePower6GB)
                                                                 {
                                                                     case "1":
@@ -864,7 +867,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P699");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower24GB = Console.ReadLine();
+                                                                    choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
                                                                     case "1":
@@ -891,7 +894,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P799");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower36GB = Console.ReadLine();
+                                                                    choicePower36GB = Console.ReadLine();
                                                                 switch (choicePower36GB)
                                                                 {
                                                                     case "1":
@@ -918,7 +921,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P899");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choicePower48GB = Console.ReadLine();
+                                                                    choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
                                                                     case "1":
@@ -946,7 +949,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (6GB)\n        P99");
                                                         Console.WriteLine("3. 30 Days (24GB)\n     P299");
                                                         string?
-                                         videoEveryDay = Console.ReadLine();
+                                                            videoEveryDay = Console.ReadLine();
 
                                                         switch (videoEveryDay)
                                                         {
@@ -959,7 +962,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo2GB = Console.ReadLine();
+                                                                    choiceVideo2GB = Console.ReadLine();
                                                                 switch (choiceVideo2GB)
                                                                 {
                                                                     case "1":
@@ -986,7 +989,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo6GB = Console.ReadLine();
+                                                                    choiceVideo6GB = Console.ReadLine();
                                                                 switch (choiceVideo6GB)
                                                                 {
                                                                     case "1":
@@ -998,7 +1001,7 @@ namespace GigaLife
                                                                         if (video6GB <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO 99");
-                                                                            Console.WriteLine("            You received 4.5 Giga Points!");
+                                                                            Console.WriteLine("            You received 4.95 Giga Points!");
                                                                             Console.WriteLine("Your new balance load: P" + (load - video6GB) + ".00");
                                                                         }
                                                                         break;
@@ -1013,7 +1016,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo24GB = Console.ReadLine();
+                                                                    choiceVideo24GB = Console.ReadLine();
                                                                 switch (choiceVideo24GB)
                                                                 {
                                                                     case "1":
@@ -1042,7 +1045,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (2GB)\n        P149");
                                                         Console.WriteLine("3. 30 Days (4GB)\n       P449");
                                                         string?
-                                         videoPLus = Console.ReadLine();
+                                                            videoPLus = Console.ReadLine();
 
                                                         switch (videoPLus)
                                                         {
@@ -1055,7 +1058,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo1GB = Console.ReadLine();
+                                                                    choiceVideo1GB = Console.ReadLine();
                                                                 switch (choiceVideo1GB)
                                                                 {
                                                                     case "1":
@@ -1082,7 +1085,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo2GB = Console.ReadLine();
+                                                                    choiceVideo2GB = Console.ReadLine();
                                                                 switch (choiceVideo2GB)
                                                                 {
                                                                     case "1":
@@ -1109,7 +1112,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P449");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceVideo4GB = Console.ReadLine();
+                                                                    choiceVideo4GB = Console.ReadLine();
                                                                 switch (choiceVideo4GB)
                                                                 {
                                                                     case "1":
@@ -1120,7 +1123,7 @@ namespace GigaLife
                                                                         }
                                                                         if (video4GB <= load)
                                                                         {
-                                                                            Console.WriteLine("Thank you for subcribing to GIGA VIDEO+ 449");
+                                                                            Console.WriteLine("Thank you for subcribing to GIGA VIDEO+ 449!");
                                                                             Console.WriteLine("            You received 22.45 Giga Points!");
                                                                             Console.WriteLine("Your new balance load: P" + (load - video4GB) + ".00");
                                                                         }
@@ -1137,7 +1140,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (2GB)\n         P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n       P299");
                                                         string?
-                                         storiesEveryDay = Console.ReadLine();
+                                                            storiesEveryDay = Console.ReadLine();
 
                                                         switch (storiesEveryDay)
                                                         {
@@ -1150,7 +1153,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories1GB = Console.ReadLine();
+                                                                    choiceStories1GB = Console.ReadLine();
 
                                                                 switch (choiceStories1GB)
                                                                 {
@@ -1178,7 +1181,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories2GB = Console.ReadLine();
+                                                                    choiceStories2GB = Console.ReadLine();
 
                                                                 switch (choiceStories2GB)
                                                                 {
@@ -1206,7 +1209,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories4GB = Console.ReadLine();
+                                                                    choiceStories4GB = Console.ReadLine();
 
                                                                 switch (choiceStories4GB)
                                                                 {
@@ -1236,7 +1239,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (2GB)\n         P149");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P499");
                                                         string?
-                                         storiesPlus = Console.ReadLine();
+                                                            storiesPlus = Console.ReadLine();
 
                                                         switch (storiesPlus)
                                                         {
@@ -1249,7 +1252,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P75");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories1GB = Console.ReadLine();
+                                                                    choiceStories1GB = Console.ReadLine();
 
                                                                 switch (choiceStories1GB)
                                                                 {
@@ -1336,7 +1339,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (2GB)\n          P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P299");
                                                         string?
-                                         games1EveryDay = Console.ReadLine();
+                                                            games1EveryDay = Console.ReadLine();
 
                                                         switch (games1EveryDay)
                                                         {
@@ -1349,7 +1352,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames1GB = Console.ReadLine();
+                                                                    choiceGames1GB = Console.ReadLine();
 
                                                                 switch (choiceGames1GB)
                                                                 {
@@ -1377,7 +1380,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames2GB = Console.ReadLine();
+                                                                    choiceGames2GB = Console.ReadLine();
 
                                                                 switch (choiceGames2GB)
                                                                 {
@@ -1405,7 +1408,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames4GB = Console.ReadLine();
+                                                                    choiceGames4GB = Console.ReadLine();
 
                                                                 switch (choiceGames4GB)
                                                                 {
@@ -1435,7 +1438,7 @@ namespace GigaLife
                                                         Console.WriteLine("2. 7 Days (2GB)\n          P99");
                                                         Console.WriteLine("3. 30 Days (4GB)\n        P299");
                                                         string?
-                                         games2EveryDay = Console.ReadLine();
+                                                            games2EveryDay = Console.ReadLine();
 
                                                         switch (games2EveryDay)
                                                         {
@@ -1448,7 +1451,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P50");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames1GB = Console.ReadLine();
+                                                                    choiceGames1GB = Console.ReadLine();
 
                                                                 switch (choiceGames1GB)
                                                                 {
@@ -1476,7 +1479,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P99");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames2GB = Console.ReadLine();
+                                                                    choiceGames2GB = Console.ReadLine();
 
                                                                 switch (choiceGames2GB)
                                                                 {
@@ -1504,7 +1507,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P299");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceGames4GB = Console.ReadLine();
+                                                                    choiceGames4GB = Console.ReadLine();
 
                                                                 switch (choiceGames4GB)
                                                                 {
@@ -1535,10 +1538,10 @@ namespace GigaLife
                                                         Console.WriteLine("5. 30 Days (8GB - VIDEO\n             P299");
                                                         Console.WriteLine("6. 30 Days (8GB - STORIES)\n          P299");
                                                         string?
-                                         doubleDataEveryDay = Console.ReadLine();
+                                                            doubleDataEveryDay = Console.ReadLine();
 
                                                         string?
-                                         double99, double299;
+                                                            double99, double299;
                                                         switch (doubleDataEveryDay)
                                                         {
                                                             case "1":// Video99
@@ -1712,8 +1715,8 @@ namespace GigaLife
                                                 Console.WriteLine("New");
                                                 Console.WriteLine("    POWERALL");
                                                 Console.WriteLine("with FREE UNLI TikTok EVERY DAY\n  + Shareable Data & Unli Allnet Texts");
-                                                Console.WriteLine("1. 7 Days (8GB)\n           P99");
-                                                Console.WriteLine("2. 7 Days (12GB)\n         P149");
+                                                Console.WriteLine("1. 7 Days (8GB)           P99");
+                                                Console.WriteLine("2. 7 Days (12GB)         P149");
                                                 userChoice = Console.ReadLine();
 
                                                 switch (userChoice)
@@ -1727,7 +1730,7 @@ namespace GigaLife
                                                         Console.WriteLine("Amount           P99");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
                                                         string?
-                                         choicePower8GB = Console.ReadLine();
+                                                            choicePower8GB = Console.ReadLine();
                                                         switch (choicePower8GB)
                                                         {
                                                             case "1":
@@ -1754,7 +1757,7 @@ namespace GigaLife
                                                         Console.WriteLine("Amount           P149");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
                                                         string?
-                                         choicePower12GB = Console.ReadLine();
+                                                        choicePower12GB = Console.ReadLine();
                                                         switch (choicePower12GB)
                                                         {
                                                             case "1":
@@ -1774,6 +1777,930 @@ namespace GigaLife
                                                         break; // Power All (12GB)
                                                 }
                                                 break;
+                                            case "6": // All Data
+                                                Console.WriteLine("Up to 5x GigaPoints");
+                                                Console.WriteLine("ALL Data Offers");
+                                                Console.WriteLine("1. ALL DATA");
+                                                Console.WriteLine("2. ALl DATA+");
+                                                Console.WriteLine("3. MAGIC DATA");
+                                                Console.WriteLine("4. MAGIC DATA+");
+                                                Console.WriteLine("5. UNLI 5G DATA");
+                                                Console.WriteLine("6. Exit");
+                                                userChoice = Console.ReadLine();
+
+                                                switch (userChoice)
+                                                {
+                                                    case "1": // ALL DATA
+                                                        Console.WriteLine(" Up to 5x GigaPoints");
+                                                        Console.WriteLine("1. 3 Days (2G)               P50");
+                                                        Console.WriteLine("2. 7 Days (6GB)              P99");
+                                                        Console.WriteLine("3. 30 Days (24GB)            P299");
+                                                        Console.WriteLine("4. 30 Days (26GB)            P399");
+                                                        Console.WriteLine("5. 30 Days (48GB)            P499");
+                                                        Console.WriteLine("6. EXit");
+
+                                                        string?
+                                                            allData = Console.ReadLine();
+                                                        switch (allData)
+                                                        {
+                                                            case "1": // alldata 50
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA 50");
+                                                                Console.WriteLine("2 GB SHAREABLE DATA FOR ALL SITES for 3 days");
+                                                                Console.WriteLine("Get 1% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P50");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAll50 = Console.ReadLine();
+                                                                switch (choiceAll50)
+                                                                {
+                                                                    case "1":
+                                                                        int allData50 = 50;
+                                                                        if (allData50 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData50 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA 50");
+                                                                            Console.WriteLine("            You received 0.5 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allData50) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "2":// alldata 99
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA 99");
+                                                                Console.WriteLine("6 GB SHAREABLE DATA FOR ALL SITES for 7 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P99");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAll99 = Console.ReadLine();
+                                                                switch (choiceAll99)
+                                                                {
+                                                                    case "1":
+                                                                        allData99 = 99;
+                                                                        if (allData99 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA 99");
+                                                                            Console.WriteLine("            You received 4.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allData99) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "3": // alldata 299
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA 299");
+                                                                Console.WriteLine("24 GB SHAREABLE DATA FOR ALL SITES for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P299");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAll299 = Console.ReadLine();
+                                                                switch (choiceAll299)
+                                                                {
+                                                                    case "1":
+                                                                        int allData299 = 299;
+                                                                        if (allData299 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA 299");
+                                                                            Console.WriteLine("            You received 14.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allData299) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "4": // alldata 399
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA 399");
+                                                                Console.WriteLine("36 GB SHAREABLE DATA FOR ALL SITES for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P399");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string choiceAll399 = Console.ReadLine();
+                                                                switch (choiceAll399)
+                                                                {
+                                                                    case "1":
+                                                                        int allData399 = 399;
+                                                                        if (allData399 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA 399");
+                                                                            Console.WriteLine("            You received 19.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allData399) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "5": // alldata499
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA 499");
+                                                                Console.WriteLine("48 GB SHAREABLE DATA FOR ALL SITES for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P499");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAll499 = Console.ReadLine();
+                                                                switch (choiceAll499)
+                                                                {
+                                                                    case "1":
+                                                                        int allData499 = 499;
+                                                                        if (allData499 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA 499");
+                                                                            Console.WriteLine("            You received 24.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allData499) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "2": // ALL DATA+
+                                                        Console.WriteLine("Up to 5x GigaPoints");
+                                                        Console.WriteLine("All Data+");
+                                                        Console.WriteLine("SHAREABLE DATA FOR ALL SITES");
+                                                        Console.WriteLine("       + Unli Allnet Calls & Texts");
+                                                        Console.WriteLine("1. 3 Days (2GB)              P75");
+                                                        Console.WriteLine("2. 7 Days (6GB)              P149");
+                                                        Console.WriteLine("3. 30 Days (24GB)            P499");
+                                                        Console.WriteLine("4. 30 Days (36GB)            P599");
+                                                        Console.WriteLine("5. 30 Days (48GB)            P699");
+                                                        Console.WriteLine("6. Exit");
+                                                        userChoice = Console.ReadLine();
+
+                                                        switch (userChoice)
+                                                        {
+                                                            case "1": // AllData+ 75
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA+ 75");
+                                                                Console.WriteLine("2 GB SHAREABLE DATA FOR ALL SITES + Unli Allnet\nCalls & Texts for 3 days");
+                                                                Console.WriteLine("Get 1% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P75");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAllPLus75 = Console.ReadLine();
+                                                                switch (choiceAllPLus75)
+                                                                {
+                                                                    case "1":
+                                                                        int allDataPlus75 = 75;
+                                                                        if (allDataPlus75 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 75");
+                                                                            Console.WriteLine("            You received 3.75 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus75) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "2": // AllData+ 149
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA+ 149");
+                                                                Console.WriteLine("6 GB SHAREABLE DATA FOR ALL SITES + Unli Allnet\nCalls & Texts for 7 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P149");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAllPLus149 = Console.ReadLine();
+                                                                switch (choiceAllPLus149)
+                                                                {
+                                                                    case "1":
+                                                                        int allDataPlus149 = 149;
+                                                                        if (allDataPlus149 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allDataPlus149 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 149");
+                                                                            Console.WriteLine("            You received 7.45 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus149) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "3": // AllData+499
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA+ 499");
+                                                                Console.WriteLine("24 GB SHAREABLE DATA FOR ALL SITES + Unli Allnet\nCalls & Texts for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P499");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAllPlus499 = Console.ReadLine();
+                                                                switch (choiceAllPlus499)
+                                                                {
+                                                                    case "1":
+                                                                        int allDataPlus499 = 499;
+                                                                        if (allDataPlus499 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 499");
+                                                                            Console.WriteLine("            You received 24.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus499) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "4": // AllData+ 599
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA+ 599");
+                                                                Console.WriteLine("36 GB SHAREABLE DATA FOR ALL SITES + Unli Allnet\nCalls & Texts for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P599");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAllPlus599 = Console.ReadLine();
+                                                                switch (choiceAllPlus599)
+                                                                {
+                                                                    case "1":
+                                                                        int allDataPlus599 = 599;
+                                                                        if (allDataPlus599 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 599");
+                                                                            Console.WriteLine("            You received 29.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus599) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "5": // AllData+ 699
+                                                                Console.WriteLine("You are about to subcribe to ALL DATA+ 699");
+                                                                Console.WriteLine("48 GB SHAREABLE DATA FOR ALL SITES + Unli Allnet\nCalls & Texts for 30 days");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P699");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceAllPlus699 = Console.ReadLine();
+                                                                switch (choiceAllPlus699)
+                                                                {
+                                                                    case "1":
+                                                                        int allDataPlus699 = 699;
+                                                                        if (allDataPlus699 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (allData99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 699");
+                                                                            Console.WriteLine("            You received 34.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus699) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "3": // MAGIC DATA
+                                                        Console.WriteLine("Up to 5x GigaPoints");
+                                                        Console.WriteLine("MAGIC DATA");
+                                                        Console.WriteLine("MAGIC DATA (NO EXPIRY)");
+                                                        Console.WriteLine("    FOR ALL SITES");
+                                                        Console.WriteLine("1. No Expiry (2GB)              P99");
+                                                        Console.WriteLine("2. No Expiry (6GB)              P199");
+                                                        Console.WriteLine("3. No Expiry (24GB)             P399");
+                                                        Console.WriteLine("4. No Expiry (36GB)             P499");
+                                                        Console.WriteLine("5. No Expiry (48GB)             P599");
+                                                        Console.WriteLine("6. Exit");
+                                                        userChoice = Console.ReadLine();
+                                                        switch (userChoice)
+                                                        {
+                                                            case "1": // 2GB
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA 99");
+                                                                Console.WriteLine("2 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P99");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagic99 = Console.ReadLine();
+                                                                switch (choiceMagic99)
+                                                                {
+                                                                    case "1":
+                                                                        int magic99 = 99;
+                                                                        if (magic99 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magic99 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to ALL DATA+ 99");
+                                                                            Console.WriteLine("            You received 4,95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magic99) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "2": // 6GB
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA 199");
+                                                                Console.WriteLine("6 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P199");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagic199 = Console.ReadLine();
+                                                                switch (choiceMagic199)
+                                                                {
+                                                                    case "1":
+                                                                        int magic199 = 199;
+                                                                        if (magic199 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magic199 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA 199");
+                                                                            Console.WriteLine("            You received 4.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magic199) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "3": // 24GB
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA 399");
+                                                                Console.WriteLine("24 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P399");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagic399 = Console.ReadLine();
+                                                                switch (choiceMagic399)
+                                                                {
+                                                                    case "1":
+                                                                        int magic399 = 399;
+                                                                        if (magic399 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magic399 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA 399");
+                                                                            Console.WriteLine("            You received Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magic399) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "4": // 36GB
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA 499");
+                                                                Console.WriteLine("36 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P499");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagic499 = Console.ReadLine();
+                                                                switch (choiceMagic499)
+                                                                {
+                                                                    case "1":
+                                                                        int magic499 = 499;
+                                                                        if (magic499 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magic499 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA 499");
+                                                                            Console.WriteLine("            You received Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magic499) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "5": // 48GB
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA 599");
+                                                                Console.WriteLine("48 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P599");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagic599 = Console.ReadLine();
+                                                                switch (choiceMagic599)
+                                                                {
+                                                                    case "1":
+                                                                        int magic599 = 599;
+                                                                        if (magic599 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magic599 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA 599!");
+                                                                            Console.WriteLine("            You received 29.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magic599) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "4": // MAGIC DATA+ 
+                                                        Console.WriteLine("NEW & IMPROVED");
+                                                        Console.WriteLine("Magic Data+");
+                                                        Console.WriteLine("MAGIC DATA WITH CALLS & TEXTS");
+                                                        Console.WriteLine("      WHICH NEVER EXPIRE");
+                                                        Console.WriteLine("1. No Expiry (2GB + 50 MINS & TEXTS)              P149");
+                                                        Console.WriteLine("2. No Expiry (6GB + 100 MINS & TEXTS)             P299");
+                                                        Console.WriteLine("3. No Expiry (24GB + 200 MINS & TEXTS)            P499");
+                                                        Console.WriteLine("4. No Expiry (36GB + 300 MINS & TEXTS)            P649");
+                                                        Console.WriteLine("5. No Expiry (48GB + 600 MINS & TEXTS)            P749");
+                                                        Console.WriteLine("6. Exit");
+
+                                                        userChoice = Console.ReadLine();
+                                                        switch (userChoice)
+                                                        {
+                                                            case "1": // 2GB (149)
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA+ 149");
+                                                                Console.WriteLine("2 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES + 50 Mins Allnet\nCalls + 50 Allnet Texts (NO EXPIRY)");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P149");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagicPlus149 = Console.ReadLine();
+                                                                switch (choiceMagicPlus149)
+                                                                {
+                                                                    case "1":
+                                                                        int magicPlus149 = 149;
+                                                                        if (magicPlus149 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magicPlus149 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 149");
+                                                                            Console.WriteLine("            You received 7.45 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus149) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "2": // 6GB (299)
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA+ 299");
+                                                                Console.WriteLine("6 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES + 100 Mins Allnet\nCalls + 100 Allnet Texts (NO EXPIRY)");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P299");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagicPlus299 = Console.ReadLine();
+                                                                switch (choiceMagicPlus299)
+                                                                {
+                                                                    case "1":
+                                                                        int magicPlus299 = 299;
+                                                                        if (magicPlus299 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magicPlus299 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 299");
+                                                                            Console.WriteLine("            You received 5.98 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus299) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "3": // 24GB (499)
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA+ 499");
+                                                                Console.WriteLine("24 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES + 200 Mins Allnet\nCalls + 200 Allnet Texts (NO EXPIRY)");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P499");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagicPlus499 = Console.ReadLine();
+                                                                switch (choiceMagicPlus499)
+                                                                {
+                                                                    case "1":
+                                                                        int magicPlus499 = 499;
+                                                                        if (magicPlus499 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magicPlus499 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 499");
+                                                                            Console.WriteLine("            You received 24.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus499) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "4": //36GB (649)
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA+ 649");
+                                                                Console.WriteLine("36 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES + 300 Mins Allnet\nCalls + 300 Allnet Texts (NO EXPIRY)");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P649");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagicPlus649 = Console.ReadLine();
+                                                                switch (choiceMagicPlus649)
+                                                                {
+                                                                    case "1":
+                                                                        int magicPlus649 = 649;
+                                                                        if (magicPlus649 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magicPlus649 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 649");
+                                                                            Console.WriteLine("            You received 12.98 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus649) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "5": //48 (749)
+                                                                Console.WriteLine("You are about to subcribe to MAGIC DATA+ 749");
+                                                                Console.WriteLine("36 GB MAGIC DATA (NO EXPIRY) FOR ALL SITES + 600 Mins Allnet\nCalls + 600 Allnet Texts (NO EXPIRY)");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P749");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceMagicPlus749 = Console.ReadLine();
+                                                                switch (choiceMagicPlus749)
+                                                                {
+                                                                    case "1":
+                                                                        int magicPlus749 = 749;
+                                                                        if (magicPlus749 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (magicPlus749 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 749");
+                                                                            Console.WriteLine("            You received 37. Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus749) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+
+
+                                                        }
+                                                        break;
+                                                    case "5": // UNLI 5G DATA
+                                                        Console.WriteLine("Up to 5x GigaPoints");
+                                                        Console.WriteLine("           Unli 5G Data");
+                                                        Console.WriteLine("Exclusiively for 5G Certified Devices");
+                                                        Console.WriteLine("        in 5G Exlusive Location");
+                                                        Console.WriteLine("1. 7 Days Unli 5G (3 GB Non-5G)                P299");
+                                                        Console.WriteLine("2. 30 Days Unli 5G (12 GB Non-5G)              P599");
+                                                        Console.WriteLine("3. 30 Days Unli 5G (24 GB Non-5G)              P799");
+                                                        Console.WriteLine("4. Exit");
+                                                        userChoice = Console.ReadLine();
+
+                                                        switch (userChoice)
+                                                        {
+                                                            case "1": // Unli 5G 299
+                                                                Console.WriteLine("You are about to subcribe to UNLI 5G DATA 299");
+                                                                Console.WriteLine("UNLI 5G DATA for 7 days + EXTRA 3 GB DATA (when you use in Non-5G areas");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P299");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceUnli299 = Console.ReadLine();
+                                                                switch (choiceUnli299)
+                                                                {
+                                                                    case "1":
+                                                                        int unli5G299 = 299;
+                                                                        if (unli5G299 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (unli5G299 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to UNLI 5G DATA 299");
+                                                                            Console.WriteLine("            You received Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - unli5G299) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "2": // Unli 5G 599
+                                                                Console.WriteLine("You are about to subcribe to UNLI 5G DATA 599");
+                                                                Console.WriteLine("UNLI 5G DATA for 30 days + EXTRA 12 GB DATA (when you use in Non-5G areas");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P599");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceUnli599 = Console.ReadLine();
+                                                                switch (choiceUnli599)
+                                                                {
+                                                                    case "1":
+                                                                        int unli5G599 = 599;
+                                                                        if (unli5G599 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (unli5G599 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to UNLI 5G DATA 599");
+                                                                            Console.WriteLine("            You received Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - unli5G599) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                            case "3": // Unli 5G 799
+                                                                Console.WriteLine("You are about to subcribe to UNLI 5G DATA 799");
+                                                                Console.WriteLine("UNLI 5G DATA for 30 days + EXTRA 24 GB DATA (when you use in Non-5G areas");
+                                                                Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                                Console.WriteLine("Payment Method");
+                                                                Console.WriteLine("       Load: P" + load);
+                                                                Console.WriteLine("Amount           P799");
+                                                                Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                                string?
+                                                                    choiceUnli799 = Console.ReadLine();
+                                                                switch (choiceUnli799)
+                                                                {
+                                                                    case "1":
+                                                                        int unli5G799 = 799;
+                                                                        if (unli5G799 > load)
+                                                                        {
+                                                                            Console.WriteLine("Sorry. Insuffient Balance");
+                                                                        }
+                                                                        if (unli5G799 <= load)
+                                                                        {
+                                                                            Console.WriteLine("Thank you for subcribing to UNLI 5G DATA 799!");
+                                                                            Console.WriteLine("            You received 39.95 Giga Points!");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - unli5G799) + ".00");
+                                                                        }
+                                                                        break;
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                }
+                                                break;
+                                            case "7": // ALLNET
+                                                Console.WriteLine("Up to 5x GigaPoints");
+                                                Console.WriteLine("ALLNET");
+                                                Console.WriteLine("Unli Allnet Calls & Texts");
+                                                Console.WriteLine("1. 1 Day (100 MB)         P30");
+                                                Console.WriteLine("2. 3 Days (500 MB)        P50");
+                                                Console.WriteLine("3. 7 Days (1 GB)          P99");
+                                                Console.WriteLine("4. 30 Days (2 GB)         P299");
+                                                Console.WriteLine("5. 60 Days (4 GB)         P499");
+                                                Console.WriteLine("6. 90 Days (6 GB)         P599");
+                                                Console.WriteLine("7. Exit");
+                                                string userChoiceallNet = Console.ReadLine();
+                                                switch (userChoiceallNet)
+                                                {
+                                                    case "1": // 100 MB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 30");
+                                                        Console.WriteLine("100 MB + Unli Allnet Calls & Texts for 1 day");
+                                                        Console.WriteLine("Get 1% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P30");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet30 = Console.ReadLine();
+                                                        switch (allnet30)
+                                                        {
+                                                            case "1":
+                                                                int allNet30 = 30;
+                                                                if (allNet30 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet30 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 30");
+                                                                    Console.WriteLine("            You received 0.3 Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet30) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "2": // 500 MB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 50");
+                                                        Console.WriteLine("500 MB + Unli Allnet Calls & Texts for 3 day");
+                                                        Console.WriteLine("Get 1% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P50");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet50 = Console.ReadLine();
+                                                        switch (allnet50)
+                                                        {
+                                                            case "1":
+                                                                int allNet50 = 50;
+                                                                if (allNet50 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet50 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 50!");
+                                                                    Console.WriteLine("            You received 0.5 Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet50) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "3": // 1 GB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 99");
+                                                        Console.WriteLine("1 GB + Unli Allnet Calls & Texts for 7 day");
+                                                        Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P99");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet099 = Console.ReadLine();
+                                                        switch (allnet099)
+                                                        {
+                                                            case "1":
+                                                                int allNet099 = 99;
+                                                                if (allNet099 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet099 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 99");
+                                                                    Console.WriteLine("            You received 4.95 Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet099) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "4": // 2 GB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 299");
+                                                        Console.WriteLine("2 GB + Unli Allnet Calls & Texts for 30 day");
+                                                        Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P299");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet299 = Console.ReadLine();
+                                                        switch (allnet299)
+                                                        {
+                                                            case "1":
+                                                                int allNet299 = 299;
+                                                                if (allNet299 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet299 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 299");
+                                                                    Console.WriteLine("            You received Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet299) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "5": // 4 GB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 499");
+                                                        Console.WriteLine("4 GB + Unli Allnet Calls & Texts for 60 day");
+                                                        Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P499");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet499 = Console.ReadLine();
+                                                        switch (allnet499)
+                                                        {
+                                                            case "1":
+                                                                int allNet499 = 499;
+                                                                if (allNet499 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet499 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 499!");
+                                                                    Console.WriteLine("            You received 24.95 Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet499) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "6": // 6 GB
+                                                        Console.WriteLine("You are about to subcribe to Allnet 599");
+                                                        Console.WriteLine("6 GB + Unli Allnet Calls & Texts for 90 day");
+                                                        Console.WriteLine("Get 5% GigaPoints as Cashback!");
+                                                        Console.WriteLine("Payment Method");
+                                                        Console.WriteLine("       Load: P" + load);
+                                                        Console.WriteLine("Amount           P599");
+                                                        Console.WriteLine("1. Subscribe         2. Cancel");
+
+                                                        string?
+                                                            allnet599 = Console.ReadLine();
+                                                        switch (allnet599)
+                                                        {
+                                                            case "1":
+                                                                int allNet599 = 599;
+                                                                if (allNet599 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Balance");
+                                                                }
+                                                                if (allNet599 <= load)
+                                                                {
+                                                                    Console.WriteLine("Thank you for subcribing to Allnet 599!");
+                                                                    Console.WriteLine("            You received 29.95 Giga Points!");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet599) + ".00");
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                }
+                                                break;
                                         }
                                         break;
                                     }
@@ -1789,7 +2716,7 @@ namespace GigaLife
                             while (pasaNoInput != "0")
                             {
                                 string?
-                 result2 = pasaNoInput == pasaNo ? "correct" : "incorrect";
+                                    result2 = pasaNoInput == pasaNo ? "correct" : "incorrect";
 
                                 if (result2 == "correct")
                                 {
@@ -1804,7 +2731,8 @@ namespace GigaLife
                                                 Console.WriteLine("1. Pasa Load");
                                                 Console.WriteLine("2. Pasa Points");
                                                 Console.WriteLine("3. Pasa Data");
-                                                Console.WriteLine("4. Exit");
+                                                Console.WriteLine("4. Pasa Load");
+                                                Console.WriteLine("5. Exit");
                                                 pasa = Console.ReadLine();
                                                 switch (pasa)
                                                 {
@@ -1821,7 +2749,7 @@ namespace GigaLife
                                                         Console.WriteLine("7. Exit");
 
                                                         string?
-                                         amountLoad = Console.ReadLine();
+                                                            amountLoad = Console.ReadLine();
                                                         switch (amountLoad)
                                                         {
                                                             case "1":
@@ -1840,7 +2768,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1867,7 +2795,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1895,7 +2823,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1923,7 +2851,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1951,7 +2879,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -1979,7 +2907,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2006,7 +2934,7 @@ namespace GigaLife
                                                         Console.WriteLine("7. Exit");
 
                                                         string?
-                                         amountPoints = Console.ReadLine();
+                                                            amountPoints = Console.ReadLine();
                                                         switch (amountPoints)
                                                         {
                                                             case "1":
@@ -2024,7 +2952,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2051,7 +2979,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2078,7 +3006,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2105,7 +3033,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2132,7 +3060,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2159,7 +3087,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2185,7 +3113,7 @@ namespace GigaLife
                                                         Console.WriteLine("7. Exit");
 
                                                         string?
-                                         dataAmount = Console.ReadLine();
+                                                            dataAmount = Console.ReadLine();
                                                         switch (dataAmount)
                                                         {
                                                             case "1":
@@ -2204,7 +3132,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2231,7 +3159,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2258,7 +3186,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2285,7 +3213,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2312,7 +3240,7 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
@@ -2339,13 +3267,185 @@ namespace GigaLife
                                                                     Console.WriteLine("Do you want to confirm?");
                                                                     Console.WriteLine("1. Confirm           2. Cancel");
                                                                     string?
-                                                     confirmation = Console.ReadLine();
+                                                                        confirmation = Console.ReadLine();
 
                                                                     switch (confirmation)
                                                                     {
                                                                         case "1":
                                                                             Console.WriteLine("You have successfully send 2 GB to " + pasaNo);
                                                                             Console.WriteLine("Your current Shareable Data = " + (sharable - data4000) + " GB");
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                        }
+                                                        break;
+                                                    case "4": // PASA LOAD
+                                                        Console.WriteLine("Pasa Load");
+                                                        Console.WriteLine("CURRENT SHAREABLE DATA = " + load);
+                                                        Console.WriteLine("Select Ammount (This required P1 trasction fee)");
+                                                        Console.WriteLine("1. P50");
+                                                        Console.WriteLine("2. P100");
+                                                        Console.WriteLine("3. P200");
+                                                        Console.WriteLine("4. P300");
+                                                        Console.WriteLine("5. P500");
+                                                        Console.WriteLine("6. 1000");
+                                                        string?
+                                                            loadAmount = Console.ReadLine();
+                                                        switch (loadAmount)
+                                                        {
+                                                            case "1": // 50
+                                                                int pasaLoad50 = 50;
+                                                                if (pasaLoad50 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad50 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 50.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P"+load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad50+1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P50.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad50 + 1)));
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                            case "2": // 100
+                                                                int pasaLoad100 = 100;
+                                                                if (pasaLoad100 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad100 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 100.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P" + load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad100 + 1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P100.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad100 + 1)));
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                            case "3": //200
+                                                                int pasaLoad200 = 200;
+                                                                if (pasaLoad200 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad200 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 200.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P" + load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad200 + 1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P200.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad200 + 1)));
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                            case "4": // 300
+                                                                int pasaLoad300 = 300;
+                                                                if (pasaLoad300 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad300 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 300.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P" + load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad300 + 1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P300.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad300 + 1)));
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                            case "5": // 500
+                                                                int pasaLoad500 = 500;
+                                                                if (pasaLoad500 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad500 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 500.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P" + load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad500 + 1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P500.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad500 + 1)));
+                                                                            break;
+                                                                    }
+                                                                }
+                                                                break;
+                                                            case "6": //600
+                                                                int pasaLoad600 = 600;
+                                                                if (pasaLoad600 > load)
+                                                                {
+                                                                    Console.WriteLine("Sorry. Insuffient Load Balance");
+                                                                    break;
+                                                                }
+                                                                if (pasaLoad600 <= load)
+                                                                {
+                                                                    Console.WriteLine("You are about to send 600.00 load");
+                                                                    Console.WriteLine("Valid for 30 days + P1 transaction fee");
+                                                                    Console.WriteLine("CURRENT LOAD BALANCE: P" + load);
+                                                                    Console.WriteLine("Amount           P" + (pasaLoad600 + 1) + ".00");
+                                                                    Console.WriteLine("Do you want to confirm?");
+                                                                    Console.WriteLine("1. Confirm           2. Cancel");
+                                                                    string?
+                                                                        confirmation = Console.ReadLine();
+                                                                    switch (confirmation)
+                                                                    {
+                                                                        case "1":
+                                                                            Console.WriteLine("You have successfully P600.00 load to " + pasaNo);
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad500 + 1)));
                                                                             break;
                                                                     }
                                                                 }
@@ -2365,6 +3465,43 @@ namespace GigaLife
                                     Console.WriteLine("Enter a mobile number");
                                     pasaNoInput = Console.ReadLine();
                                 } // Incorrect number for PASA
+                            }
+                            break;
+                        case "4": // ACCOUNTS
+                            Console.WriteLine("1. Link Smart (Prepaid, Postpaid, Bro, Signature");
+                            Console.WriteLine("2. Link TNT (TNT)");
+                            Console.WriteLine("3. Link PLDT");
+                            Console.WriteLine("Accounts");
+                            Console.WriteLine("Link more accounts to manage all your numbers");
+                            Console.WriteLine(mobileNumber + "(Smart Prepaid)");
+                            Console.WriteLine("Do you want to add you another Mobile Number");
+                            Console.WriteLine("1. Confirm           2. Cancel");
+                            userChoice = Console.ReadLine();
+
+                            switch (userChoice)
+                            {
+
+                                case "1": // smart
+                                    Console.WriteLine("Link Account");
+                                    Console.WriteLine("Add Smart number to easliy manage your accounts");
+                                    string?
+                                        numberSmart = Console.ReadLine();
+                                    Console.WriteLine("SUCCESFULLY ADDED");
+                                    break;
+                                case "2": // TNT
+                                    Console.WriteLine("Link Account");
+                                    Console.WriteLine("Add TNT number to easliy manage your accounts");
+                                    string?
+                                        numberTnt = Console.ReadLine();
+                                    Console.WriteLine("SUCCESFULLY ADDED");
+                                    break;
+                                case "3": // PLDT
+                                    Console.WriteLine("Link Account");
+                                    Console.WriteLine("Add PLDT number to easliy manage your accounts");
+                                    string?
+                                        numberPldt = Console.ReadLine();
+                                    Console.WriteLine("SUCCESFULLY ADDED");
+                                    break;
                             }
                             break;
                     }
