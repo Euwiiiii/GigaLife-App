@@ -1280,7 +1280,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P149");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories2GB = Console.ReadLine();
+                                                                    choiceStories2GB = Console.ReadLine();
 
                                                                 switch (choiceStories2GB)
                                                                 {
@@ -1308,7 +1308,7 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P449");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
                                                                 string?
-                                                 choiceStories4GB = Console.ReadLine();
+                                                                    choiceStories4GB = Console.ReadLine();
 
                                                                 switch (choiceStories4GB)
                                                                 {
@@ -1757,7 +1757,7 @@ namespace GigaLife
                                                         Console.WriteLine("Amount           P149");
                                                         Console.WriteLine("1. Subscribe         2. Cancel");
                                                         string?
-                                                        choicePower12GB = Console.ReadLine();
+                                                            choicePower12GB = Console.ReadLine();
                                                         switch (choicePower12GB)
                                                         {
                                                             case "1":
@@ -1896,7 +1896,8 @@ namespace GigaLife
                                                                 Console.WriteLine("Amount           P399");
                                                                 Console.WriteLine("1. Subscribe         2. Cancel");
 
-                                                                string choiceAll399 = Console.ReadLine();
+                                                                string?
+                                                                    choiceAll399 = Console.ReadLine();
                                                                 switch (choiceAll399)
                                                                 {
                                                                     case "1":
@@ -2413,7 +2414,6 @@ namespace GigaLife
                                                                 }
                                                                 break;
 
-
                                                         }
                                                         break;
                                                     case "5": // UNLI 5G DATA
@@ -2528,7 +2528,8 @@ namespace GigaLife
                                                 Console.WriteLine("5. 60 Days (4 GB)         P499");
                                                 Console.WriteLine("6. 90 Days (6 GB)         P599");
                                                 Console.WriteLine("7. Exit");
-                                                string userChoiceallNet = Console.ReadLine();
+                                                string?
+                                                    userChoiceallNet = Console.ReadLine();
                                                 switch (userChoiceallNet)
                                                 {
                                                     case "1": // 100 MB
@@ -3445,7 +3446,7 @@ namespace GigaLife
                                                                     {
                                                                         case "1":
                                                                             Console.WriteLine("You have successfully P600.00 load to " + pasaNo);
-                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad500 + 1)));
+                                                                            Console.WriteLine("Your current load balance = " + (load - (pasaLoad600 + 1)));
                                                                             break;
                                                                     }
                                                                 }
@@ -3477,29 +3478,25 @@ namespace GigaLife
                             Console.WriteLine("Do you want to add you another Mobile Number");
                             Console.WriteLine("1. Confirm           2. Cancel");
                             userChoice = Console.ReadLine();
-
+                            string? number;
                             switch (userChoice)
-                            {
-
+                            {                               
                                 case "1": // smart
                                     Console.WriteLine("Link Account");
                                     Console.WriteLine("Add Smart number to easliy manage your accounts");
-                                    string?
-                                        numberSmart = Console.ReadLine();
+                                    number = Console.ReadLine();
                                     Console.WriteLine("SUCCESFULLY ADDED");
                                     break;
                                 case "2": // TNT
                                     Console.WriteLine("Link Account");
                                     Console.WriteLine("Add TNT number to easliy manage your accounts");
-                                    string?
-                                        numberTnt = Console.ReadLine();
+                                    number = Console.ReadLine();
                                     Console.WriteLine("SUCCESFULLY ADDED");
                                     break;
                                 case "3": // PLDT
                                     Console.WriteLine("Link Account");
                                     Console.WriteLine("Add PLDT number to easliy manage your accounts");
-                                    string?
-                                        numberPldt = Console.ReadLine();
+                                    number = Console.ReadLine();
                                     Console.WriteLine("SUCCESFULLY ADDED");
                                     break;
                             }
