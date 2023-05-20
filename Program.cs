@@ -5,15 +5,18 @@ namespace GigaLife
     class GigaLife
     {
         static void Main(string[] args)
-        {
+        {   
+            
             // Inside Giga Points 
             int points = 1000;
-            string? userChoice, rewards, rewards2;
-            int video99 = 99, stories99 = 99, power149 = 149, allNet99 = 99, magicData99 = 99, allData99 = 99;
+            string? userChoice, rewards, rewards2;            
 
             // inside HOME
             int load = 5000, sharable = 6000, everDay = 2;
             string? subscription = "GIGA POWER 149";
+            // OFFERS + POINTS
+            int subOffers_50 = 50, subOffers_65 = 65, subOffers_75 = 75, subOffers_99 = 99, subOffers_130 = 130, subOffers_149 = 149, subOffers_199 = 199, subOffers_299 = 299 ;
+            int subOffers_399 = 399, subOffers_449 = 449, subOffers_499 = 499, subOffers_599 = 599, subOffers_699 = 699, subOffers_799 = 799, subOffers_899 = 899;
 
             // inside PASA
             string? pasaNo = "09496314907";
@@ -73,39 +76,39 @@ namespace GigaLife
                             switch (rewards)
                             {
                                 case "1":
-                                    if (points < video99)
+                                    if (points < subOffers_99)
                                     {
                                         Console.WriteLine("Insufficient GigaPoints");
                                     }
-                                    if (points > video99)
+                                    if (points > subOffers_99)
                                     {
-                                        int remaining1 = points - video99;
+                                        int remaining1 = points - subOffers_99;
                                         Console.WriteLine("You have choosen GIGA VIDEO 99.");
                                         Console.WriteLine("Your remaining points is " + remaining1 + " points");
                                         Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                     }
                                     break;
                                 case "2":
-                                    if (points < stories99)
+                                    if (points < subOffers_99)
                                     {
                                         Console.WriteLine("Insufficient GigaPoints");
                                     }
-                                    if (points > stories99)
+                                    if (points > subOffers_99)
                                     {
-                                        int remaining2 = points - stories99;
+                                        int remaining2 = points - subOffers_99;
                                         Console.WriteLine("You have choosen GIGA STORIES 99.");
                                         Console.WriteLine("Your remaining points is " + remaining2 + " points");
                                         Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                     }
                                     break;
                                 case "3":
-                                    if (points < power149)
+                                    if (points < subOffers_149)
                                     {
                                         Console.WriteLine("Insufficient GigaPoints");
                                     }
-                                    if (points > power149)
+                                    if (points > subOffers_149)
                                     {
-                                        int remaining3 = points - power149;
+                                        int remaining3 = points - subOffers_149;
                                         Console.WriteLine("You have choosen GIGA POWER 149.");
                                         Console.WriteLine("Your remaining points is " + remaining3 + " points");
                                         Console.WriteLine("Thank you for claiming. See you on your next transaction!");
@@ -125,78 +128,78 @@ namespace GigaLife
                                     switch (rewards2)
                                     {
                                         case "1":
-                                            if (points < video99)
+                                            if (points < subOffers_99)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > video99)
+                                            if (points > subOffers_99)
                                             {
-                                                int remaining1 = points - video99;
+                                                int remaining1 = points - subOffers_99;
                                                 Console.WriteLine("You have choosen GIGA VIDEO 99.");
                                                 Console.WriteLine("Your remaining points is " + remaining1 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                             }
                                             break;
                                         case "2":
-                                            if (points < stories99)
+                                            if (points < subOffers_99)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > stories99)
+                                            if (points > subOffers_99)
                                             {
-                                                int remaining2 = points - stories99;
+                                                int remaining2 = points - subOffers_99;
                                                 Console.WriteLine("You have choosen GIGA STORIES 99.");
                                                 Console.WriteLine("Your remaining points is " + remaining2 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                             }
                                             break;
                                         case "3":
-                                            if (points < allNet99)
+                                            if (points < subOffers_99)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > allNet99)
+                                            if (points > subOffers_99)
                                             {
-                                                int remaining3 = points - allNet99;
+                                                int remaining3 = points - subOffers_99;
                                                 Console.WriteLine("You have choosen ALL NET 99.");
                                                 Console.WriteLine("Your remaining points is " + remaining3 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                             }
                                             break;
                                         case "4":
-                                            if (points < magicData99)
+                                            if (points < subOffers_99)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > magicData99)
+                                            if (points > subOffers_99)
                                             {
-                                                int remaining4 = points - magicData99;
+                                                int remaining4 = points - subOffers_99;
                                                 Console.WriteLine("You have choosen MAGIC DATA 99.");
                                                 Console.WriteLine("Your remaining points is " + remaining4 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                             }
                                             break;
                                         case "5":
-                                            if (points < allData99)
+                                            if (points < subOffers_99)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > allData99)
+                                            if (points > subOffers_99)
                                             {
-                                                int remaining5 = points - allData99;
+                                                int remaining5 = points - subOffers_99;
                                                 Console.WriteLine("You have choosen ALL DATA 99.");
                                                 Console.WriteLine("Your remaining points is " + remaining5 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
                                             }
                                             break;
                                         case "6":
-                                            if (points < power149)
+                                            if (points < subOffers_149)
                                             {
                                                 Console.WriteLine("Insufficient GigaPoints");
                                             }
-                                            if (points > power149)
+                                            if (points > subOffers_149)
                                             {
-                                                int remaining6 = points - power149;
+                                                int remaining6 = points - subOffers_149;
                                                 Console.WriteLine("You have choosen GIGA POWER 149.");
                                                 Console.WriteLine("Your remaining points is " + remaining6 + " points");
                                                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
@@ -224,7 +227,7 @@ namespace GigaLife
                                     Console.WriteLine("      SHAREABLE DATA = " + sharable + "GB");
                                     Console.WriteLine("      DATA = " + everDay + "GB (POWER EVERY DAY)");
                                     break;
-                                case "2":
+                                case "2": // Offers
                                     Console.WriteLine("1. DON'T MISS OUT!");
                                     Console.WriteLine("2. HOT DEALS");
                                     Console.WriteLine("3. DOUBLE GIGA +");
@@ -272,17 +275,16 @@ namespace GigaLife
                                                                     video130 = Console.ReadLine();
                                                                 switch (video130)
                                                                 {
-                                                                    case "1":
-                                                                        int subVideo130 = 130;
-                                                                        if (subVideo130 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_130 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (subVideo130 <= load)
+                                                                        if (subOffers_130 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA VIDEO+ 130!");
                                                                             Console.WriteLine("            You received 6.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - subVideo130) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_130) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -302,16 +304,15 @@ namespace GigaLife
                                                                 switch (video399)
                                                                 {
                                                                     case "1":
-                                                                        int subVideo399 = 399;
-                                                                        if (subVideo399 > load)
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (subVideo399 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA VIDEO+ 399!");
                                                                             Console.WriteLine("            You received 19.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - subVideo399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -329,17 +330,16 @@ namespace GigaLife
                                                                     stories130 = Console.ReadLine();
                                                                 switch (stories130)
                                                                 {
-                                                                    case "1":
-                                                                        int subStories130 = 130;
-                                                                        if (subStories130 > load)
+                                                                    case "1":                                                                       
+                                                                        if (subOffers_130 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (subStories130 <= load)
+                                                                        if (subOffers_130 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA STORIES+ 130!");
                                                                             Console.WriteLine("            You received 6.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - subStories130) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_130) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -359,16 +359,15 @@ namespace GigaLife
                                                                 switch (stories399)
                                                                 {
                                                                     case "1":
-                                                                        int subStories399 = 399;
-                                                                        if (subStories399 > load)
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (subStories399 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA STORIES+ 399!");
                                                                             Console.WriteLine("            You received 19.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - subStories399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -400,17 +399,16 @@ namespace GigaLife
                                                             subChoice = Console.ReadLine();
                                                         switch (subChoice)
                                                         {
-                                                            case "1":
-                                                                int powerAll149 = 149;
-                                                                if (powerAll149 > load)
+                                                            case "1":                                                                
+                                                                if (subOffers_149 > load)
                                                                 {
                                                                     Console.WriteLine("Sorry. Insuffient Balance");
                                                                 }
-                                                                if (powerAll149 <= load)
+                                                                if (subOffers_149 <= load)
                                                                 {
                                                                     Console.WriteLine("Thank you for subcribing to POWER ALL 149");
                                                                     Console.WriteLine("            You received 7.45 Giga Points!");
-                                                                    Console.WriteLine("Your new balance load: P" + (load - powerAll149) + ".00");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - subOffers_149) + ".00");
                                                                 }
                                                                 break;
                                                         }
@@ -451,17 +449,16 @@ namespace GigaLife
                                                                     gigaVideo65 = Console.ReadLine();
                                                                 switch (gigaVideo65)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleVideo65 = 65;
-                                                                        if (doubleVideo65 > load)
+                                                                    case "1":        
+                                                                        if (subOffers_65 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleVideo65 <= load)
+                                                                        if (subOffers_65 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA VIDEO+ 65!");
                                                                             Console.WriteLine("            You received 0.65 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleVideo65) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_65) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -479,17 +476,16 @@ namespace GigaLife
                                                                     gigaVideo130 = Console.ReadLine();
                                                                 switch (gigaVideo130)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleVideo130 = 130;
-                                                                        if (doubleVideo130 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_130 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleVideo130 <= load)
+                                                                        if (subOffers_130 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA VIDEO+ 130!");
                                                                             Console.WriteLine("            You received 6.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleVideo130) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_130) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -507,17 +503,16 @@ namespace GigaLife
                                                                     gigaVideo399 = Console.ReadLine();
                                                                 switch (gigaVideo399)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleVideo399 = 399;
-                                                                        if (doubleVideo399 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleVideo399 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA VIDEO+ 399!");
                                                                             Console.WriteLine("            You received 19.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleVideo399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -546,17 +541,16 @@ namespace GigaLife
                                                                     gigaStories65 = Console.ReadLine();
                                                                 switch (gigaStories65)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleStories65 = 65;
-                                                                        if (doubleStories65 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_65 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleStories65 <= load)
+                                                                        if (subOffers_65 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA STORIES+ 65!");
                                                                             Console.WriteLine("            You received 0.65 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleStories65) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_65) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -574,17 +568,16 @@ namespace GigaLife
                                                                     gigaStories130 = Console.ReadLine();
                                                                 switch (gigaStories130)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleStories130 = 130;
-                                                                        if (doubleStories130 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_130 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleStories130 <= load)
+                                                                        if (subOffers_130 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA STORIES+ 130!");
                                                                             Console.WriteLine("            You received 6.5  Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleStories130) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_130) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -602,17 +595,16 @@ namespace GigaLife
                                                                     gigaStories399 = Console.ReadLine();
                                                                 switch (gigaStories399)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleStories399 = 399;
-                                                                        if (doubleStories399 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleStories399 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subscribing to DOUBLE GIGA STORIES+ 399!");
                                                                             Console.WriteLine("            You received 19.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleStories399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -664,17 +656,16 @@ namespace GigaLife
                                                                     choicePower3GB = Console.ReadLine();
                                                                 switch (choicePower3GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power3GB = 75;
-                                                                        if (power3GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_75 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power3GB <= load)
+                                                                        if (subOffers_75 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER 75");
                                                                             Console.WriteLine("            You received 3.75 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power3GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_75) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -718,17 +709,16 @@ namespace GigaLife
                                                                     choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power24GB = 499;
-                                                                        if (power24GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_499 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power24GB <= load)
+                                                                        if (subOffers_499 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER 499");
                                                                             Console.WriteLine("            You received 24.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power24GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -772,17 +762,16 @@ namespace GigaLife
                                                                     choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power48GB = 699;
-                                                                        if (power48GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_699 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power48GB <= load)
+                                                                        if (subOffers_699 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER 599");
                                                                             Console.WriteLine("            You received 34.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power48GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_699) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -843,17 +832,16 @@ namespace GigaLife
                                                                     choicePower6GB = Console.ReadLine();
                                                                 switch (choicePower6GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power6GB = 199;
-                                                                        if (power6GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_199 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power6GB <= load)
+                                                                        if (subOffers_199 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER+ 199");
                                                                             Console.WriteLine("            You received 9.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power6GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_199) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -870,17 +858,16 @@ namespace GigaLife
                                                                     choicePower24GB = Console.ReadLine();
                                                                 switch (choicePower24GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power24GB = 699;
-                                                                        if (power24GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_699 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power24GB <= load)
+                                                                        if (subOffers_699 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER+ 699");
                                                                             Console.WriteLine("            You received 34.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power24GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_699) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -897,17 +884,16 @@ namespace GigaLife
                                                                     choicePower36GB = Console.ReadLine();
                                                                 switch (choicePower36GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power36GB = 799;
-                                                                        if (power36GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_799 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power36GB <= load)
+                                                                        if (subOffers_799 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER+ 799");
                                                                             Console.WriteLine("            You received 39.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power36GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_799) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -924,17 +910,16 @@ namespace GigaLife
                                                                     choicePower48GB = Console.ReadLine();
                                                                 switch (choicePower48GB)
                                                                 {
-                                                                    case "1":
-                                                                        int power48GB = 899;
-                                                                        if (power48GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_899 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (power48GB <= load)
+                                                                        if (subOffers_899 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA POWER+ 899");
                                                                             Console.WriteLine("            You received 44.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - power48GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_899) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -965,17 +950,16 @@ namespace GigaLife
                                                                     choiceVideo2GB = Console.ReadLine();
                                                                 switch (choiceVideo2GB)
                                                                 {
-                                                                    case "1":
-                                                                        int video2GB = 50;
-                                                                        if (video2GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_50 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (video2GB <= load)
+                                                                        if (subOffers_50 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO 50");
                                                                             Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - video2GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_50 + ".00"));
                                                                         }
                                                                         break;
                                                                 }
@@ -1019,17 +1003,16 @@ namespace GigaLife
                                                                     choiceVideo24GB = Console.ReadLine();
                                                                 switch (choiceVideo24GB)
                                                                 {
-                                                                    case "1":
-                                                                        int video24GB = 299;
-                                                                        if (video24GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (video24GB <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - video24GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1061,17 +1044,16 @@ namespace GigaLife
                                                                     choiceVideo1GB = Console.ReadLine();
                                                                 switch (choiceVideo1GB)
                                                                 {
-                                                                    case "1":
-                                                                        int video1GB = 75;
-                                                                        if (video1GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_75 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (video1GB <= load)
+                                                                        if (subOffers_75 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO+ 75");
                                                                             Console.WriteLine("            You received 3.75 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - video1GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_75) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1115,17 +1097,16 @@ namespace GigaLife
                                                                     choiceVideo4GB = Console.ReadLine();
                                                                 switch (choiceVideo4GB)
                                                                 {
-                                                                    case "1":
-                                                                        int video4GB = 449;
-                                                                        if (video4GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_449 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (video4GB <= load)
+                                                                        if (subOffers_449 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO+ 449!");
                                                                             Console.WriteLine("            You received 22.45 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - video4GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_449) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1157,17 +1138,16 @@ namespace GigaLife
 
                                                                 switch (choiceStories1GB)
                                                                 {
-                                                                    case "1":
-                                                                        int stories1GB = 50;
-                                                                        if (stories1GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_50 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (stories1GB <= load)
+                                                                        if (subOffers_50 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA STORIES 50");
                                                                             Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - stories1GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_50) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1213,17 +1193,16 @@ namespace GigaLife
 
                                                                 switch (choiceStories4GB)
                                                                 {
-                                                                    case "1":
-                                                                        int stories4GB = 299;
-                                                                        if (stories4GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (stories4GB <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA STORIES 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - stories4GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1256,17 +1235,16 @@ namespace GigaLife
 
                                                                 switch (choiceStories1GB)
                                                                 {
-                                                                    case "1":
-                                                                        int stories1GB = 70;
-                                                                        if (stories1GB > load)
+                                                                    case "1":           
+                                                                        if (subOffers_75 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (stories1GB <= load)
+                                                                        if (subOffers_75 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA STORIES+ 75");
                                                                             Console.WriteLine("            You received 3.75 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - stories1GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_75) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1312,17 +1290,16 @@ namespace GigaLife
 
                                                                 switch (choiceStories4GB)
                                                                 {
-                                                                    case "1":
-                                                                        int stories4GB = 449;
-                                                                        if (stories4GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_449 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (stories4GB <= load)
+                                                                        if (subOffers_449 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA STORIES+ 449");
                                                                             Console.WriteLine("            You received 22.45 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - stories4GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_449) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1356,17 +1333,16 @@ namespace GigaLife
 
                                                                 switch (choiceGames1GB)
                                                                 {
-                                                                    case "1":
-                                                                        int games1GB = 50;
-                                                                        if (games1GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_50 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (games1GB <= load)
+                                                                        if (subOffers_50 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA GAMES-1 50");
                                                                             Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - games1GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_50) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1412,17 +1388,16 @@ namespace GigaLife
 
                                                                 switch (choiceGames4GB)
                                                                 {
-                                                                    case "1":
-                                                                        int games4GB = 299;
-                                                                        if (games4GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (games4GB <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA GAMES-1 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - games4GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1455,17 +1430,16 @@ namespace GigaLife
 
                                                                 switch (choiceGames1GB)
                                                                 {
-                                                                    case "1":
-                                                                        int games1GB = 50;
-                                                                        if (games1GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_50 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (games1GB <= load)
+                                                                        if (subOffers_50 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA GAMES-2 50");
                                                                             Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - games1GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_50) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1511,17 +1485,16 @@ namespace GigaLife
 
                                                                 switch (choiceGames4GB)
                                                                 {
-                                                                    case "1":
-                                                                        int games4GB = 299;
-                                                                        if (games4GB > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (games4GB <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA GAMES-2 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - games4GB) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1664,17 +1637,16 @@ namespace GigaLife
 
                                                                 switch (double299)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleVideo299 = 299;
-                                                                        if (doubleVideo299 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleVideo299 <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA VIDEO  299");
                                                                             Console.WriteLine("            You received 14.955 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleVideo299) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1691,17 +1663,16 @@ namespace GigaLife
 
                                                                 switch (double299)
                                                                 {
-                                                                    case "1":
-                                                                        int doubleStories299 = 299;
-                                                                        if (doubleStories299 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (doubleStories299 <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to GIGA STORIES 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - doubleStories299) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1816,17 +1787,16 @@ namespace GigaLife
                                                                     choiceAll50 = Console.ReadLine();
                                                                 switch (choiceAll50)
                                                                 {
-                                                                    case "1":
-                                                                        int allData50 = 50;
-                                                                        if (allData50 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_50 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData50 <= load)
+                                                                        if (subOffers_50 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA 50");
                                                                             Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allData50) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_50) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1844,17 +1814,16 @@ namespace GigaLife
                                                                     choiceAll99 = Console.ReadLine();
                                                                 switch (choiceAll99)
                                                                 {
-                                                                    case "1":
-                                                                        allData99 = 99;
-                                                                        if (allData99 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_99 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_99 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA 99");
                                                                             Console.WriteLine("            You received 4.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allData99) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_99) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1872,17 +1841,16 @@ namespace GigaLife
                                                                     choiceAll299 = Console.ReadLine();
                                                                 switch (choiceAll299)
                                                                 {
-                                                                    case "1":
-                                                                        int allData299 = 299;
-                                                                        if (allData299 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA 299");
                                                                             Console.WriteLine("            You received 14.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allData299) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1900,17 +1868,16 @@ namespace GigaLife
                                                                     choiceAll399 = Console.ReadLine();
                                                                 switch (choiceAll399)
                                                                 {
-                                                                    case "1":
-                                                                        int allData399 = 399;
-                                                                        if (allData399 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA 399");
                                                                             Console.WriteLine("            You received 19.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allData399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1928,17 +1895,16 @@ namespace GigaLife
                                                                     choiceAll499 = Console.ReadLine();
                                                                 switch (choiceAll499)
                                                                 {
-                                                                    case "1":
-                                                                        int allData499 = 499;
-                                                                        if (allData499 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_499 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_499 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA 499");
                                                                             Console.WriteLine("            You received 24.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allData499) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -1973,17 +1939,16 @@ namespace GigaLife
                                                                     choiceAllPLus75 = Console.ReadLine();
                                                                 switch (choiceAllPLus75)
                                                                 {
-                                                                    case "1":
-                                                                        int allDataPlus75 = 75;
-                                                                        if (allDataPlus75 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_75 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_75 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA+ 75");
                                                                             Console.WriteLine("            You received 3.75 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus75) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_75) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2029,17 +1994,16 @@ namespace GigaLife
                                                                     choiceAllPlus499 = Console.ReadLine();
                                                                 switch (choiceAllPlus499)
                                                                 {
-                                                                    case "1":
-                                                                        int allDataPlus499 = 499;
-                                                                        if (allDataPlus499 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_499 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_499 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA+ 499");
                                                                             Console.WriteLine("            You received 24.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus499) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2057,17 +2021,16 @@ namespace GigaLife
                                                                     choiceAllPlus599 = Console.ReadLine();
                                                                 switch (choiceAllPlus599)
                                                                 {
-                                                                    case "1":
-                                                                        int allDataPlus599 = 599;
-                                                                        if (allDataPlus599 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_599 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_599 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA+ 599");
                                                                             Console.WriteLine("            You received 29.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus599) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_599) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2085,17 +2048,16 @@ namespace GigaLife
                                                                     choiceAllPlus699 = Console.ReadLine();
                                                                 switch (choiceAllPlus699)
                                                                 {
-                                                                    case "1":
-                                                                        int allDataPlus699 = 699;
-                                                                        if (allDataPlus699 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_699 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (allData99 <= load)
+                                                                        if (subOffers_699 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to ALL DATA+ 699");
                                                                             Console.WriteLine("            You received 34.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - allDataPlus699) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_699) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2157,17 +2119,16 @@ namespace GigaLife
                                                                     choiceMagic199 = Console.ReadLine();
                                                                 switch (choiceMagic199)
                                                                 {
-                                                                    case "1":
-                                                                        int magic199 = 199;
-                                                                        if (magic199 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_199 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (magic199 <= load)
+                                                                        if (subOffers_199 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to MAGIC DATA 199");
                                                                             Console.WriteLine("            You received 4.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - magic199) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_199) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2185,17 +2146,16 @@ namespace GigaLife
                                                                     choiceMagic399 = Console.ReadLine();
                                                                 switch (choiceMagic399)
                                                                 {
-                                                                    case "1":
-                                                                        int magic399 = 399;
-                                                                        if (magic399 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_399 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (magic399 <= load)
+                                                                        if (subOffers_399 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to MAGIC DATA 399");
                                                                             Console.WriteLine("            You received Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - magic399) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_399) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2213,17 +2173,16 @@ namespace GigaLife
                                                                     choiceMagic499 = Console.ReadLine();
                                                                 switch (choiceMagic499)
                                                                 {
-                                                                    case "1":
-                                                                        int magic499 = 499;
-                                                                        if (magic499 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_499 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (magic499 <= load)
+                                                                        if (subOffers_499 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to MAGIC DATA 499");
                                                                             Console.WriteLine("            You received Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - magic499) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2314,17 +2273,16 @@ namespace GigaLife
                                                                     choiceMagicPlus299 = Console.ReadLine();
                                                                 switch (choiceMagicPlus299)
                                                                 {
-                                                                    case "1":
-                                                                        int magicPlus299 = 299;
-                                                                        if (magicPlus299 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (magicPlus299 <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 299");
                                                                             Console.WriteLine("            You received 5.98 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus299) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2342,17 +2300,16 @@ namespace GigaLife
                                                                     choiceMagicPlus499 = Console.ReadLine();
                                                                 switch (choiceMagicPlus499)
                                                                 {
-                                                                    case "1":
-                                                                        int magicPlus499 = 499;
-                                                                        if (magicPlus499 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_499 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (magicPlus499 <= load)
+                                                                        if (subOffers_499 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to MAGIC DATA+ 499");
                                                                             Console.WriteLine("            You received 24.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - magicPlus499) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2442,17 +2399,16 @@ namespace GigaLife
                                                                     choiceUnli299 = Console.ReadLine();
                                                                 switch (choiceUnli299)
                                                                 {
-                                                                    case "1":
-                                                                        int unli5G299 = 299;
-                                                                        if (unli5G299 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_299 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (unli5G299 <= load)
+                                                                        if (subOffers_299 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to UNLI 5G DATA 299");
                                                                             Console.WriteLine("            You received Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - unli5G299) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2498,17 +2454,16 @@ namespace GigaLife
                                                                     choiceUnli799 = Console.ReadLine();
                                                                 switch (choiceUnli799)
                                                                 {
-                                                                    case "1":
-                                                                        int unli5G799 = 799;
-                                                                        if (unli5G799 > load)
+                                                                    case "1":                                                                        
+                                                                        if (subOffers_799 > load)
                                                                         {
                                                                             Console.WriteLine("Sorry. Insuffient Balance");
                                                                         }
-                                                                        if (unli5G799 <= load)
+                                                                        if (subOffers_799 <= load)
                                                                         {
                                                                             Console.WriteLine("Thank you for subcribing to UNLI 5G DATA 799!");
                                                                             Console.WriteLine("            You received 39.95 Giga Points!");
-                                                                            Console.WriteLine("Your new balance load: P" + (load - unli5G799) + ".00");
+                                                                            Console.WriteLine("Your new balance load: P" + (load - subOffers_799) + ".00");
                                                                         }
                                                                         break;
                                                                 }
@@ -2574,16 +2529,15 @@ namespace GigaLife
                                                         switch (allnet50)
                                                         {
                                                             case "1":
-                                                                int allNet50 = 50;
-                                                                if (allNet50 > load)
+                                                                if (subOffers_50 > load)
                                                                 {
                                                                     Console.WriteLine("Sorry. Insuffient Balance");
                                                                 }
-                                                                if (allNet50 <= load)
+                                                                if (subOffers_50 <= load)
                                                                 {
                                                                     Console.WriteLine("Thank you for subcribing to Allnet 50!");
                                                                     Console.WriteLine("            You received 0.5 Giga Points!");
-                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet50) + ".00");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - subOffers_50) + ".00");
                                                                 }
                                                                 break;
                                                         }
@@ -2629,17 +2583,16 @@ namespace GigaLife
                                                             allnet299 = Console.ReadLine();
                                                         switch (allnet299)
                                                         {
-                                                            case "1":
-                                                                int allNet299 = 299;
-                                                                if (allNet299 > load)
+                                                            case "1":                                                                
+                                                                if (subOffers_299 > load)
                                                                 {
                                                                     Console.WriteLine("Sorry. Insuffient Balance");
                                                                 }
-                                                                if (allNet299 <= load)
+                                                                if (subOffers_299 <= load)
                                                                 {
                                                                     Console.WriteLine("Thank you for subcribing to Allnet 299");
                                                                     Console.WriteLine("            You received Giga Points!");
-                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet299) + ".00");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - subOffers_299) + ".00");
                                                                 }
                                                                 break;
                                                         }
@@ -2657,17 +2610,16 @@ namespace GigaLife
                                                             allnet499 = Console.ReadLine();
                                                         switch (allnet499)
                                                         {
-                                                            case "1":
-                                                                int allNet499 = 499;
-                                                                if (allNet499 > load)
+                                                            case "1":                                                                
+                                                                if (subOffers_499 > load)
                                                                 {
                                                                     Console.WriteLine("Sorry. Insuffient Balance");
                                                                 }
-                                                                if (allNet499 <= load)
+                                                                if (subOffers_499 <= load)
                                                                 {
                                                                     Console.WriteLine("Thank you for subcribing to Allnet 499!");
                                                                     Console.WriteLine("            You received 24.95 Giga Points!");
-                                                                    Console.WriteLine("Your new balance load: P" + (load - allNet499) + ".00");
+                                                                    Console.WriteLine("Your new balance load: P" + (load - subOffers_499) + ".00");
                                                                 }
                                                                 break;
                                                         }
