@@ -1122,18 +1122,7 @@ namespace GigaLifeApp
             Console.WriteLine("1. Subscribe         2. Cancel");
             Confirmation_3(offerType, loadRequired_1, gigaPointsGain_1, additionalGB, subcriptedList);
 
-        }
-        public static void AcquireDataPlus(string offerType, string percentage, int loadRequired_1, double gigaPointsGain_1, int additionalGB, int date)
-        {
-            Console.WriteLine($"You are about to subcribe to {offerType}");
-            Console.WriteLine($"{additionalGB} GB SHARABLE DATA FOR ALL SITES + Unli Allnet Calls & Texts for {date} days");
-            Console.WriteLine($"Get {percentage}% GigaPoints as Cashback");
-            Console.WriteLine("Payment Method");
-            Console.WriteLine("       Load: P" + iLoad);
-            Console.WriteLine($"Amount           P{loadRequired_1}");
-            Console.WriteLine("1. Subscribe         2. Cancel");
-            Confirmation_3(offerType, loadRequired_1, gigaPointsGain_1, additionalGB, subcriptedList);
-        } // WAITT DI KO ALAAM BAKIT MAY GANITO AKOOOO SHUTA
+        }      
         public static void Confirmation(string offerType, int loadRequired_1, int everydayGB, double gigaPointsGain_1, int additionalGB, List<string> subcriptedList)
         {
             var userChoice = UserInput();
