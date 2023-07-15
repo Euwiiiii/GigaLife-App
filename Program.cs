@@ -10,13 +10,12 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace GigaLifeApp
-{   
+{
     class Program
     {
         static GigaLife account = null!;
-        static GigaLife info = new GigaLife();
-       //  static Arrays array = new Arrays();
         static public List<string> Subscribed = new List<string>();
+
         static void Main()
         {
             account = new GigaLife();
@@ -53,7 +52,8 @@ namespace GigaLifeApp
                             break;
                         case "2":
                             // POffers.Usage();
-                            Usage();
+                            Offers offers = new Offers();
+                            Usage(offers);
                             Console.WriteLine("         Do you want to check your SMART LOAD OFFERS?");
                             Console.WriteLine("                     1. Yes      2. No");
                             userChoice = UserInput();
@@ -73,9 +73,25 @@ namespace GigaLifeApp
                             }
                             break;
                         case "3":
-
+                            Console.WriteLine("Pasa");
+                            Console.WriteLine($"Do you want to pasa (Load, Points, and Data) to {account.pasaNumber}?");
+                            Console.WriteLine("1.Yes      2.Exit");
+                            userChoice = UserInput();
+                            if (userChoice == "1")
+                            {
+                                PPasa.PasaMenu();
+                            }
+                            else if (userChoice == "2")
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid Choice");
+                            }
                             break;
                         case "4":
+                            PAccount.AccountMenu();
                             break;
                         default:
                             Console.WriteLine("Invalid Input");
@@ -98,27 +114,26 @@ namespace GigaLifeApp
             string userChoice = Console.ReadLine() ?? string.Empty;
             return userChoice;
         }
-        public static void Usage()
+        public static void Usage(Offers offers)
         {
             GigaLife info = new GigaLife();
-            Offers[] array = AvailableOffers.ArrayOffers();
-            POffers.Confirmation(array, info);
-
-            double updatePoints = PRewards.UpdatedGigaPoints();
+            double addPoints = POffers.UpdatePoints();
             int updateLoad = POffers.UpdatedLoad();
-
-
+            int updateMagic = POffers.UpdateMagic();
+            int updateShareable = POffers.UpdateShareable();
+            int updateCallsTexts = POffers.UpdateCallsTexts();
             Console.WriteLine($"Load Balance = P{updateLoad}.00");
-
-            Console.WriteLine($"GigaPoints = {updatePoints}");
-            Console.WriteLine("Subcripted to");
-            info.DisplaySub();
-            /*if (info1.UMagic > info.magicData )
+            Console.WriteLine($"GigaPoints = {addPoints}"); // kapag ginawa kong addPoints - updatePoints nag zezero kasi yung mismong nasa updatePoints 990 rin yung points
+            Console.WriteLine($"Shareable Data = {updateShareable} GB");
+            if (info.magicData < updateMagic)
             {
-                Console.WriteLine($"Magic Data Balance  = {info1.UMagic} GB");
-            }*/
+                Console.WriteLine($"Magic Data Balance  = {updateMagic} GB");
+            }
+            if (info.limitedCallsTexts < updateCallsTexts)
+            {
+                Console.WriteLine($"Calls & Text = {updateCallsTexts}");
+            }
+            info.DisplaySub();
         }
-
-
     }
 }

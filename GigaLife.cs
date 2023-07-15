@@ -8,6 +8,7 @@ public class GigaLife
 {
     static public List<string> Subscribed = new List<string>();
     public List<string> callsTexts = new List<string>();
+
     
     public string PIN = "BSCpE2023";
     public string Number = "09206420898";
@@ -19,14 +20,14 @@ public class GigaLife
     public int magicData = 0;
     public int limitedCallsTexts = 0;
 
-    public bool UpdateBalance()
+    public bool UpdateBalance(Offers offer)
     {
-        Offers[] offers = AvailableOffers.ArrayOffers();
+        // Offers[] offers = AvailableOffers.ArrayOffers();
 
         bool reduce = false;
-        if (load >= offers[0].RequireLoad)
+        if (load >= offer.RequireLoad)
         {
-            load -= offers[0].RequireLoad;
+            load -= offer.RequireLoad;
             reduce = true;
         }
         return reduce;
