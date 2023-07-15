@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 public class GigaLife
 {
     static public List<string> Subscribed = new List<string>();
-    public List<string> callsTexts = new List<string>();
-
-    
+     
     public string PIN = "BSCpE2023";
     public string Number = "09206420898";
     public string pasaNumber = "09206420897";
@@ -21,9 +19,7 @@ public class GigaLife
     public int limitedCallsTexts = 0;
 
     public bool UpdateBalance(Offers offer)
-    {
-        // Offers[] offers = AvailableOffers.ArrayOffers();
-
+    {       
         bool reduce = false;
         if (load >= offer.RequireLoad)
         {
@@ -32,19 +28,15 @@ public class GigaLife
         }
         return reduce;
     }
-
-    public bool ReduceGigaPoints()
+    public bool ReduceGigaPoints(Rewards rewards)
     {
-        Rewards[] rewards = AvailableRewards.ArrayRewards();
         bool reduce = false;
-        if (gigaPoints >= rewards[0].RequirePoints)
+        if (gigaPoints >= rewards.RequirePoints)
         {
-            gigaPoints -= rewards[0].RequirePoints;
+            gigaPoints -= rewards.RequirePoints;
             reduce = true;
         }
-
         return reduce;
-
     }
     public bool GainGigaPoints(Offers offer)
     {
@@ -81,28 +73,36 @@ public class GigaLife
         limitedCallsTexts += offer.CallText;
         return limitedCallsTexts;
     }
-    public static List<string> subscription(Rewards[] array)
+    public static List<string> subscription(Rewards[] array, Offers offers)
     {
+        GigaLife info = new GigaLife();
         foreach (Rewards reward in array)
         {
-            Subscribed.Add(reward.Type);
+            if (info.gigaPoints >= reward.RequirePoints)
+            {
+                Subscribed.Add(reward.Type);
+            }
 
         }
         return Subscribed;
     }
     public static List<string> subscription(Offers[] array)
     {
+        GigaLife info = new GigaLife();
         foreach (Offers offer in array)
         {
-            Subscribed.Add(offer.Type);
+            if (info.load >= offer.RequireLoad)
+            {
+                Subscribed.Add(offer.Type);
+            }
         }
         return Subscribed;
     }
-
     public void DisplaySub()
     {
         if (Subscribed != null && Subscribed.Count > 0)
         {
+            Console.WriteLine("Subcripted to");
             for (int i = 0; i < Subscribed.Count; i++)
             {
                 Console.WriteLine(Subscribed[i]);
@@ -110,3 +110,4 @@ public class GigaLife
         }
     }
 }
+

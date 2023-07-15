@@ -8,13 +8,14 @@ public class PRewards
 {
     static GigaLife info = new GigaLife();
 
-    public static void RedeemRewards(Rewards[] array)
+    public static double RedeemRewards(Rewards[] array)
     {
         foreach (Rewards reward in array)
         {
+
             if (info.gigaPoints >= reward.RequirePoints)
             {
-                info.ReduceGigaPoints();
+                info.ReduceGigaPoints(reward);
                 Console.WriteLine($"You have chosen {reward.Type}");
                 Console.WriteLine($"Your remaining points: {info.gigaPoints} points");
                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
@@ -24,9 +25,9 @@ public class PRewards
                 Console.WriteLine("Insufficient load balance.");
             }
         }
-
+        return info.gigaPoints;
     }
-    public static double ReedeemMenu()
+    public static void ReedeemMenu()
     {
         Console.WriteLine($"GigaPoints = {info.gigaPoints} points");
         Console.WriteLine("You can use your points to Redeem Rewards");
@@ -38,20 +39,21 @@ public class PRewards
         var userChoice = UserInput();
 
         Rewards[] rewards = AvailableRewards.ArrayRewards();
+        Offers offers = new Offers();
 
         switch (userChoice)
         {
             case "1":
                 RedeemRewards(new Rewards[] { rewards[0] });
-                GigaLife.subscription(new Rewards[] { rewards[0] });
+                GigaLife.subscription(new Rewards[] { rewards[0] }, offers);
                 break;
             case "2":
                 RedeemRewards(new Rewards[] { rewards[1] });
-                GigaLife.subscription(new Rewards[] { rewards[1] });
+                GigaLife.subscription(new Rewards[] { rewards[1] }, offers);
                 break;
             case "3":
                 RedeemRewards(new Rewards[] { rewards[2] });
-                GigaLife.subscription(new Rewards[] { rewards[2] });
+                GigaLife.subscription(new Rewards[] { rewards[2] }, offers);
                 break;
             case "4":
                 Console.WriteLine("1. ALLNET  99 (99 points)");
@@ -62,26 +64,25 @@ public class PRewards
                 {
                     Console.Clear();
                     RedeemRewards(new Rewards[] { rewards[2] });
-                    GigaLife.subscription(new Rewards[] { rewards[2] });
+                    GigaLife.subscription(new Rewards[] { rewards[2] }, offers);
                 }
                 else if (userChoice == "2")
                 {
                     RedeemRewards(new Rewards[] { rewards[4] });
-                    GigaLife.subscription(new Rewards[] { rewards[4] });
+                    GigaLife.subscription(new Rewards[] { rewards[4] }, offers);
                 }
                 else
                 {
                     RedeemRewards(new Rewards[] { rewards[5] });
-                    GigaLife.subscription(new Rewards[] { rewards[5] });
+                    GigaLife.subscription(new Rewards[] { rewards[5] }, offers);
                 }
                 break;
             default:
                 Console.WriteLine("Invalid Choice");
                 break;
         }
-        return info.gigaPoints;
+ 
     }
-
     private static string UserInput()
     {
         Console.Write("Enter your Choice: ");
