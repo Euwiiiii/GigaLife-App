@@ -1,35 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
+using System.Xml.XPath;
 
 public class PRewards
 {
     static GigaLife info = new GigaLife();
+     static double deduction = 0;
+    /*static double AddedPoints = POffers.AddPoints(); */
+    // static 
 
     public static double RedeemRewards(Rewards[] array)
     {
+        // Result2 result = new Result2();
+        double forPoints = GigaLife.returnThisPoints();
+        Console.ForegroundColor = ConsoleColor.Green;
         foreach (Rewards reward in array)
         {
-
-            if (info.gigaPoints >= reward.RequirePoints)
+            
+            if (forPoints >= reward.RequirePoints)
             {
-                info.ReduceGigaPoints(reward);
+                
+                info.ReduceGigaPoints(reward);                
                 Console.WriteLine($"You have chosen {reward.Type}");
-                Console.WriteLine($"Your remaining points: {info.gigaPoints} points");
+                // Console.WriteLine($"Your remaining points: {info.gigaPoints} points");
                 Console.WriteLine("Thank you for claiming. See you on your next transaction!");
+                
+                // result.
+                    deduction += reward.RequirePoints;
+                    forPoints -= reward.RequirePoints;
+                // result.points = info.gigaPoints + AddedPoints;
             }
             else
             {
                 Console.WriteLine("Insufficient load balance.");
-            }
+            }           
         }
-        return info.gigaPoints;
+        return deduction;       
     }
     public static void ReedeemMenu()
     {
-        Console.WriteLine($"GigaPoints = {info.gigaPoints} points");
+        //  Result2 result = new Result2();
+        double forPoints = GigaLife.returnThisPoints();
+        Console.WriteLine($"GigaPoints = {forPoints} points");
         Console.WriteLine("You can use your points to Redeem Rewards");
         Console.WriteLine("MOST POPULAR REWARDS");
         Console.WriteLine("1. GIGA VIDEO 99 (99 points)");
@@ -92,6 +109,8 @@ public class PRewards
 
     public static double UpdatedGigaPoints()
     {
-        return info.gigaPoints;
+        return deduction;
     }
 }
+
+

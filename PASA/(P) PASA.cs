@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 public class PPasa
 {
     static GigaLife info = new GigaLife();
-
+    static double deduction2 = 0; // for points
+    static int deduction3 = 0; // for load
+    static double forPoints = GigaLife.returnThisPoints();
+  
+    static int deduction4 = 0; // for shareable
     public static void PasaMenu()
     {
         Console.WriteLine("1. Pasa Load");
@@ -19,9 +23,12 @@ public class PPasa
         PASA[] pasa = AvailablePASA.ArrayPASA();
         switch (userChoice)
         {
+
             case "1":
+                int forLoad2 = GigaLife.returnThisLoad();
+                
                 Console.WriteLine("Pasa Load");
-                Console.WriteLine("CURRENT LOAD BALANCE = P" + info.load);
+                Console.WriteLine("CURRENT LOAD BALANCE = P" + forLoad2);
                 Console.WriteLine("Select Amount");
                 Console.WriteLine("1. P50.00");
                 Console.WriteLine("2. P100.00");
@@ -60,8 +67,10 @@ public class PPasa
                 }
                 break;
             case "2":
+               
+                double forPoints = GigaLife.returnThisPoints();
                 Console.WriteLine("Pasa Points");
-                Console.WriteLine($"CURRECTN GIGA POINTS = {info.gigaPoints}");
+                Console.WriteLine($"CURRECTN GIGA POINTS = {forPoints}");
                 Console.WriteLine("Select Points");
                 Console.WriteLine("1. 5 points");
                 Console.WriteLine("2. 10 points");
@@ -98,8 +107,10 @@ public class PPasa
                 }
                 break;
             case "3":
+                
+                int forData = GigaLife.returnThisData();
                 Console.WriteLine("Pasa Data");
-                Console.WriteLine("CURRECT SHAREABLE DATA = " + info.gigaPoints + " GB");
+                Console.WriteLine("CURRECT SHAREABLE DATA = " + forData + " GB");
                 Console.WriteLine("Select Data Amount");
                 Console.WriteLine("1. 100 MB");
                 Console.WriteLine("2. 300 MB");
@@ -151,8 +162,10 @@ public class PPasa
         string userChoice = Console.ReadLine() ?? string.Empty;
         return userChoice;
     }
-    public static int PasaData(PASA[] array)
+    public static (int deduction3, int deduction4) PasaData(PASA[] array)
     {
+        int forData = GigaLife.returnThisData();
+        int forLoad2 = GigaLife.returnThisLoad();
         foreach (PASA pasa in array)
         {
 
@@ -169,9 +182,9 @@ public class PPasa
                     int iAmount = 1;
                     Console.WriteLine($"You about to send {pasa.pasaType} Data");
                     Console.WriteLine($"Valid for 1 day + P1 transaction fee");
-                    Console.WriteLine($"SHAREABLE DATA: {info.shareableData}");
+                    Console.WriteLine($"SHAREABLE DATA: {forData}");
                     Console.WriteLine("Payment Method");
-                    Console.WriteLine($"Load Balance= {info.load}");
+                    Console.WriteLine($"Load Balance= {forLoad2}");
                     Console.WriteLine($"Amount           P{iAmount}");
                     Console.WriteLine("1. Subscribe         2. Cancel");
                     var userChoice = UserInput();
@@ -179,73 +192,89 @@ public class PPasa
                     {
                         case "1":
                             Console.WriteLine($"You have successfully {pasa.pasaType} to {info.pasaNumber}");
-                            info.load -= iAmount;
-                            info.shareableData -= pasa.PasaData;
+                            deduction3 += iAmount;
+                           // info.load -= iAmount;
+                            deduction4 += pasa.PasaData;
                             break;
                     }
                 }
                 break;
             }
         }
-        return info.shareableData;
+        return (deduction3, deduction4);
     }
-    public static double PasaPoints(PASA[] array)
+    public static (int deduction, double gigaPoints, double deduction2) PasaPoints(PASA[] array)
     {
+
+        int forLoad2 = GigaLife.returnThisLoad();
         foreach (PASA pasa in array)
         {
-            var insufficient = info.gigaPoints <= pasa.pasaPoints;
-            while (!insufficient)
-            {
+            var insufficient = forPoints <= pasa.pasaPoints;           
                 if (insufficient)
                 {
                     Console.WriteLine("Sorry. Insuffient Load Balance");
                     break;
                 }
-                if (pasa.pasaPoints <= info.gigaPoints)
+            if (pasa.pasaPoints <= info.gigaPoints)
+            {
+                int iAmount = 1;
+                Console.WriteLine($"You about to send {pasa.pasaType}");
+                Console.WriteLine("P1 transaction fee");
+                Console.WriteLine($"SHAREABLE POINTS: {info.gigaPoints}");
+                Console.WriteLine("Payment Method");
+                Console.WriteLine($"Load Balance= {forLoad2}");
+                Console.WriteLine($"Amount           P{iAmount}");
+                Console.WriteLine("1. Subscribe         2. Cancel");
+                var userChoice = UserInput();
+                switch (userChoice)
                 {
-                    int iAmount = 1;
-                    Console.WriteLine($"You about to send {pasa.pasaType}");
-                    Console.WriteLine("P1 transaction fee");
-                    Console.WriteLine($"SHAREABLE POINTS: {info.gigaPoints}");
-                    Console.WriteLine("Payment Method");
-                    Console.WriteLine($"Load Balance= {info.load}");
-                    Console.WriteLine($"Amount           P{iAmount}");
-                    Console.WriteLine("1. Subscribe         2. Cancel");
-                    var userChoice = UserInput();
-                    switch (userChoice)
-                    {
-                        case "1":
-                            Console.WriteLine($"You have successfully {pasa.pasaType} to {info.pasaNumber}");
-                            info.load -= iAmount;
-                            info.gigaPoints -= pasa.pasaPoints;
-                            break;
-                    }
+                    case "1":
+                        Console.WriteLine($"You have successfully {pasa.pasaType} to {info.pasaNumber}");
+                        
+                        deduction3 += iAmount;
+                        deduction2 += pasa.pasaPoints;
+                        forPoints -= pasa.pasaPoints;
+                        break;
                 }
-                break;
-            }
+            }               
+            
         }
-        return info.gigaPoints;
+        return (deduction3, info.gigaPoints, deduction2);
+    }
+    public static double fromPasaPoints()
+    {
+        return deduction2;
     }
 
+    public static int storedTheDeductionLoad ()
+    {
+        return deduction3;
+    }
+
+    public static int theShareableDeduction()
+    {
+        return deduction4;
+    }
     public static int PasaLoad(PASA[] array)
     {
+        int forLoad2 = GigaLife.returnThisLoad();
         foreach (PASA pasa in array)
         {
-            var insufficient = info.load <= pasa.pasaLoad;
-            while (!insufficient)
+            var insufficient = forLoad2 <= pasa.pasaLoad;
+            if (!insufficient)
             {
                 if (insufficient)
                 {
                     Console.WriteLine("Sorry. Insuffient Load Balance");
                     break;
                 }
-                if (pasa.pasaLoad <= info.load)
+                else if (pasa.pasaLoad <= info.load)
                 {
-                    int iAmount = 1;
-                    iAmount += pasa.pasaLoad;
+                    int iAmount = 1 + pasa.pasaLoad;
+                    
                     Console.WriteLine($"You about to send {pasa.pasaType}");
                     Console.WriteLine($"Valid for 30 days + P1 transaction fee");
-                    Console.WriteLine($"CURRENT LOAD BALANCE: P{info.load}");
+                    Console.WriteLine($"CURRENT LOAD BALANCE: P{forLoad2}");
                     Console.WriteLine("Payment Method");
                     Console.WriteLine($"Amount           P{iAmount}");
                     Console.WriteLine("1. Subscribe         2. Cancel");
@@ -254,14 +283,13 @@ public class PPasa
                     {
                         case "1":
                             Console.WriteLine($"You have successfully {pasa.pasaType} to {info.pasaNumber}");
-                            info.load -= iAmount;
+                            deduction3 += iAmount;
                             break;
                     }
-                    return info.load;
-                }
-                break;
+                    
+                }           
             }
         }
-        return info.load;
+        return deduction3;
     }
 }

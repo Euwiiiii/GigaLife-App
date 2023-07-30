@@ -8,14 +8,16 @@ using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-
+/*
+ * Eurimay Lyzel T. Gabutan
+ * BSCpE 1-1 
+*/
 namespace GigaLifeApp
 {
     class Program
     {
         static GigaLife account = null!;
-        static public List<string> Subscribed = new List<string>();
-
+        static public List<string> Subscribed = new List<string>();     
         static void Main()
         {
             account = new GigaLife();
@@ -47,18 +49,20 @@ namespace GigaLifeApp
                     }
                     switch (userChoice)
                     {
-                        case "1":
+                        case "1":                           
                             PRewards.ReedeemMenu();
                             break;
-                        case "2":
-                            // POffers.Usage();
+                        case "2":                                                       
                             Offers offers = new Offers();
-                            Usage(offers);
+                            GigaLife.Usage(offers);
                             Console.WriteLine("         Do you want to check your SMART LOAD OFFERS?");
                             Console.WriteLine("                     1. Yes      2. No");
                             userChoice = UserInput();
-                            if (userChoice == "1")
+                            
+                            
+                           if (userChoice == "1")
                             {
+                                Console.ForegroundColor = ConsoleColor.Magenta;
                                 POffers.HomeMenu();
                             }
                             else if (userChoice == "2")
@@ -113,27 +117,6 @@ namespace GigaLifeApp
             Console.Write("Enter your Choice: ");
             string userChoice = Console.ReadLine() ?? string.Empty;
             return userChoice;
-        }
-        public static void Usage(Offers offers)
-        {
-            GigaLife info = new GigaLife();
-            double addPoints = POffers.UpdatePoints();
-            int updateLoad = POffers.UpdatedLoad();
-            int updateMagic = POffers.UpdateMagic();
-            int updateShareable = POffers.UpdateShareable();
-            int updateCallsTexts = POffers.UpdateCallsTexts();
-            Console.WriteLine($"Load Balance = P{updateLoad}.00");
-            Console.WriteLine($"GigaPoints = {addPoints}"); // kapag ginawa kong addPoints - updatePoints nag zezero kasi yung mismong nasa updatePoints 990 rin yung points
-            Console.WriteLine($"Shareable Data = {updateShareable} GB");
-            if (info.magicData < updateMagic)
-            {
-                Console.WriteLine($"Magic Data Balance  = {updateMagic} GB");
-            }
-            if (info.limitedCallsTexts < updateCallsTexts)
-            {
-                Console.WriteLine($"Calls & Text = {updateCallsTexts}");
-            }
-            info.DisplaySub();
-        }
+        }     
     }
 }

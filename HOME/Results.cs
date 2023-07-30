@@ -12,5 +12,5 @@ public class Results
     public int UMagicData { get; set; }
     public int UEverydayGB { get; set; }
     public int UCallsTexts { get; set; }
-
+    public double pointsAdd { get; set; }
 }

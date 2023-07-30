@@ -7,12 +7,9 @@ using System.Threading.Tasks;
 public class POffers
 {
     static GigaLife info = new GigaLife();
-
-    // int updateLoad = UpdatedLoad();
-    // int updateMagic = UpdatedMagic();
-    // double updatePoints = r
-
-
+    static public double pointsAdd = 0;
+    static int reducLoad = 0; 
+    
     public static void HomeMenu()
     {      
 
@@ -832,6 +829,7 @@ public class POffers
                     result.UPoints = info.gigaPoints;
                     result.UMagicData = info.magicData;
                     result.UCallsTexts = info.limitedCallsTexts;
+                    result.pointsAdd = pointsAdd += offer.GainPoints;
                 }
                 else
                 {
@@ -839,208 +837,234 @@ public class POffers
                 }
             }
         }
-
-
-
         return result;
     }
-    public static void AcquireStoriesPlus(Offers[] array)
+    public static int AcquireStoriesPlus(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.Add} & TOTAL {offer.TotalEverydayGB} GB: {offer.EverydayGB} GB STORIES \n EVERY DAY for TikTok, IG, FB, Twitter, Kumu {offer.Add} GB for {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage} % GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
 
+                reducLoad += offer.RequireLoad;
+                
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireStories(Offers[] array)
+    public static int AcquireStories(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.EverydayGB} GB STORIES EVERY DAY for TikTok, IG, FB, Twitter, \nKumu (TOTAL{offer.TotalEverydayGB} + {offer.Add} GB for {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage} % GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
 
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireMagicPlus(Offers[] array)
+    public static int AcquireMagicPlus(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.MagicGB} GB MAGIC DATA FOR ALL SITES + {offer.CallText} Mins Allnet Calls + {offer.CallText} Allnet Texts (NO EXPIRY)");
                 Console.WriteLine($"Get {offer.Percentage} % GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireVideoPlus(Offers[] array)
+    public static int AcquireVideoPlus(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.Add} & TOTAL {offer.TotalEverydayGB} GB: {offer.EverydayGB} GB VIDEO \n EVERY DAY for YouTube, Netflix, Smart Livestream, \n iWantTFC + {offer.Add} GB for {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage} % GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
-
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireVideo(Offers[] array)
+    public static int AcquireVideo(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.EverydayGB} VIDEO EVERYDAY for YouTube, Netflix, Smart\nLivestream, iWantTFC + {offer.ShareableGB} GB {offer.Add} for {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback!");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquirePower(Offers[] array)
+    public static int AcquirePower(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.EverydayGB} POWER EVERYDAY FOR ALL SITE & APPS + {offer.ShareableGB}\nGB Shareable Data for {offer.Date} days.");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback!");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquirePowerPlus(Offers[] array)
+    public static int  AcquirePowerPlus(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.EverydayGB} POWER EVERYDAY FOR ALL SITE & APPS + {offer.ShareableGB}\nGB Shareable Data + {offer.Add} for {offer.Date}\ndays.");
                 Console.WriteLine($"Get {offer.Percentage}  GigaPoints as Cashback!");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
-
         }
+        return reducLoad;
     }
-    public static void AcquireGames(Offers[] array)
+
+    public static int AcquireGames(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.EverydayGB} GB GAMES EVERYDAY for {offer.Add} + {offer.ShareableGB} GB +\nfor {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireAllDATA(Offers[] array)
+    public static int AcquireAllDATA(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.ShareableGB} GB SHARABLE DATA FOR ALL SITES {offer.Add} for {offer.Date} days");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
-    public static void AcquireAllnet(Offers[] array)
+    public static int AcquireAllnet(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subscribe to {offer.Type}");
                 Console.WriteLine($"{offer.ShareableGB} MB + Unli Allnet Calls & Texts for {offer.Date}");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
@@ -1048,27 +1072,30 @@ public class POffers
             }
 
         }
-
+        return reducLoad;
     }
-    public static void AcquireMagic(Offers[] array)
+    public static int AcquireMagic(Offers[] array)
     {
+        int LoadUP2 = GigaLife.returnThisLoad();
         foreach (Offers offer in array)
         {
-            if (info.load >= offer.RequireLoad)
+            if (LoadUP2 >= offer.RequireLoad)
             {
                 Console.WriteLine($"You are about to subcribe to {offer.Type}");
                 Console.WriteLine($"{offer.ShareableGB} GB MAGIC DATA FOR ALL SITES {offer.CallText} {offer.Add} (NO EXPIRY)");
                 Console.WriteLine($"Get {offer.Percentage}% GigaPoints as Cashback");
                 Console.WriteLine("Payment Method");
-                Console.WriteLine($"       Load: P {info.load}");
+                Console.WriteLine($"       Load: P {LoadUP2}");
                 Console.WriteLine($"Amount           p{offer.RequireLoad}");
                 Console.WriteLine("1. Subscribe         2. Cancel");
+                reducLoad += offer.RequireLoad;
             }
             else
             {
                 Console.WriteLine("Insifficient load Balance");
             }
         }
+        return reducLoad;
     }
     public static int UpdatedLoad()
     {
@@ -1089,5 +1116,13 @@ public class POffers
     public static int UpdateCallsTexts()
     {
         return info.limitedCallsTexts;
+    }
+    public static double AddPoints()
+    {
+        return pointsAdd;
+    }
+    public static int loadRed()
+    {
+        return reducLoad;
     }
 }

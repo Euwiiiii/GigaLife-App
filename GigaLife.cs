@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,17 +8,17 @@ using System.Threading.Tasks;
 public class GigaLife
 {
     static public List<string> Subscribed = new List<string>();
-     
+    
     public string PIN = "BSCpE2023";
     public string Number = "09206420898";
     public string pasaNumber = "09206420897";
     public int load = 500;
-    public double gigaPoints = 990;
+    public double gigaPoints = 900; 
     public int shareableData = 2000;
     public int everyDay = 2;
     public int magicData = 0;
     public int limitedCallsTexts = 0;
-
+       
     public bool UpdateBalance(Offers offer)
     {       
         bool reduce = false;
@@ -30,10 +31,11 @@ public class GigaLife
     }
     public bool ReduceGigaPoints(Rewards rewards)
     {
-        bool reduce = false;
+        bool reduce = false;        
         if (gigaPoints >= rewards.RequirePoints)
         {
-            gigaPoints -= rewards.RequirePoints;
+            double AddedPoints = POffers.AddPoints();
+            gigaPoints += AddedPoints - rewards.RequirePoints;
             reduce = true;
         }
         return reduce;
@@ -109,5 +111,57 @@ public class GigaLife
             }
         }
     }
+    public static void Usage(Offers offers)
+    {
+        GigaLife info = new GigaLife();
+
+        double result2 = returnThisPoints();
+        int load2 = returnThisLoad();
+        int shareable = returnThisData();     
+        int updateMagic = POffers.UpdateMagic();       
+        int updateCallsTexts = POffers.UpdateCallsTexts();
+
+        Console.WriteLine($"Load Balance = P{load2}.00");
+        Console.WriteLine($"GigaPoints = {result2}"); 
+        Console.WriteLine($"Shareable Data = {shareable} GB");
+        if (info.magicData < updateMagic)
+        {
+            Console.WriteLine($"Magic Data Balance  = {updateMagic} GB");
+        }
+        if (info.limitedCallsTexts < updateCallsTexts)
+        {
+            Console.WriteLine($"Calls & Text = {updateCallsTexts}");
+        }
+        info.DisplaySub();
+    }
+    public static double returnThisPoints ()
+    {
+        GigaLife info = new GigaLife();
+        double AddedPoints = POffers.AddPoints();
+        double Reduct = PRewards.UpdatedGigaPoints();
+        double reduct2 = PPasa.fromPasaPoints();
+        double result = AddedPoints + info.gigaPoints - Reduct - reduct2;
+        return result;
+    }
+
+    public static int returnThisLoad()
+    {
+        GigaLife info = new GigaLife();
+        int reduc = POffers.loadRed();
+        int reduct1 = PPasa.storedTheDeductionLoad();
+        int result = info.load - reduct1 - reduc;
+        return result;
+    }
+
+    public static int returnThisData()
+    {
+        GigaLife info = new GigaLife();
+        int reduct1 = PPasa.theShareableDeduction();
+        int updateShareable = POffers.UpdateShareable();
+        int result = info.shareableData + updateShareable - reduct1;
+        return result;
+    }
 }
+
+
 
